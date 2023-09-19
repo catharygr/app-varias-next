@@ -17,7 +17,6 @@ export default function Nav() {
     >
       <div className={styles.image}>
         <Image src={logo} alt="Logo de la empresa" />
-        <Image src={icon} alt="Icono de carrito" />
       </div>
 
       <ul className={styles.ul}>
@@ -43,6 +42,7 @@ export default function Nav() {
           </li>
         ))}
       </ul>
+      <Image className={styles.icon} src={icon} alt="Icono de carrito" />
     </nav>
   );
 }
@@ -51,7 +51,7 @@ const data = [
   {
     slug: "collections",
     text: "Collections",
-    url: "/",
+    url: "/collections",
   },
   {
     slug: "men",

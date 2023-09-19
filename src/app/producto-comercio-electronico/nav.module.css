@@ -2,14 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 800px;
+  width: 900px;
   border-bottom: 1px solid #999;
   padding: 1rem;
+  gap: 3rem;
+  margin-left: 4rem;
 }
 
-.image {
-  display: flex;
-  justify-content: space-between;
+.icon {
+  margin-left: 10rem;
 }
 
 .ul {
