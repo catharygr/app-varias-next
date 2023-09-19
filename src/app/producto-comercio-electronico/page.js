@@ -4,44 +4,46 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/app/image/logo.svg";
+import icon from "@/app/image/icon-cart.svg";
 import { useState, useId } from "react";
 
 export default function Nav() {
   const [hoveredNavItem, setHoveredNavItem] = useState(null);
   const id = useId();
   return (
-    <div className={styles.logo}>
-      <nav
-        className={styles.container}
-        onMouseLeave={() => setHoveredNavItem(null)}
-      >
-        <Image className={styles.image} src={logo} alt="Logo de la empresa" />
+    <nav
+      className={styles.container}
+      onMouseLeave={() => setHoveredNavItem(null)}
+    >
+      <div className={styles.image}>
+        <Image src={logo} alt="Logo de la empresa" />
+        <Image src={icon} alt="Icono de carrito" />
+      </div>
 
-        <ul className={styles.ul}>
-          {data.map(({ slug, text, url }) => (
-            <li key={slug}>
-              {hoveredNavItem === slug && (
-                <motion.div
-                  layoutId={id}
-                  className={styles.fondo}
-                  initial={{
-                    borderRadius: 10,
-                  }}
-                />
-              )}
+      <ul className={styles.ul}>
+        {data.map(({ slug, text, url }) => (
+          <li key={slug}>
+            {hoveredNavItem === slug && (
+              <motion.div
+                layoutId={id}
+                className={styles.fondo}
+                initial={{
+                  borderRadius: 10,
+                }}
+              />
+            )}
 
-              <Link
-                className={styles.a}
-                href={url}
-                onMouseEnter={() => setHoveredNavItem(slug)}
-              >
-                {text}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
+            <Link
+              className={styles.a}
+              href={url}
+              onMouseEnter={() => setHoveredNavItem(slug)}
+            >
+              {text}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
 

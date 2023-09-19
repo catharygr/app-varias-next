@@ -1,16 +1,15 @@
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
   border-bottom: 1px solid #999;
   padding: 1rem;
 }
 
-.logo {
-  display: flex;
-  justify-content: start;
-}
-
 .image {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .ul {
