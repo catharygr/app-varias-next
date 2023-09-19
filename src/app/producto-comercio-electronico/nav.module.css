@@ -1,0 +1,30 @@
+.container {
+  border-bottom: 1px solid #999;
+  padding: 1rem;
+}
+
+.ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ul li {
+  position: relative;
+  list-style: none;
+}
+
+.a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: #333;
+}
+
+.fondo {
+  position: absolute;
+  inset: 0;
+  background-color: #999;
+  border-radius: 10px;
+  z-index: -1;
+}
