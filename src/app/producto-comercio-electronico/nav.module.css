@@ -3,6 +3,16 @@
   padding: 1rem;
 }
 
+.logo {
+  display: flex;
+  justify-content: start;
+}
+
+.image {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .ul {
   display: flex;
   justify-content: center;
