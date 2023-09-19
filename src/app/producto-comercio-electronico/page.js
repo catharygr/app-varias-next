@@ -1,9 +1,68 @@
-import styles from "./producto.module.css";
+"use client";
+import styles from "./nav.module.css";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { useState, useId } from "react";
 
-export default function Producto() {
+export default function Nav() {
+  const [hoveredNavItem, setHoveredNavItem] = useState(null);
+  const id = useId();
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Producto de Comercio Electrónico</h1>
-    </div>
+    <nav
+      className={styles.container}
+      onMouseLeave={() => setHoveredNavItem(null)}
+    >
+      <ul className={styles.ul}>
+        {data.map(({ slug, text, url }) => (
+          <li key={slug}>
+            {hoveredNavItem === slug && (
+              <motion.div
+                layoutId={id}
+                className={styles.fondo}
+                initial={{
+                  borderRadius: 10,
+                }}
+              />
+            )}
+
+            <Link
+              className={styles.a}
+              href={url}
+              onMouseEnter={() => setHoveredNavItem(slug)}
+            >
+              {text}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
+
+const data = [
+  {
+    slug: "collections",
+    text: "Collections",
+    url: "/",
+  },
+  {
+    slug: "men",
+    text: "Men",
+    url: "/men",
+  },
+  {
+    slug: "women",
+    text: "Women",
+    url: "/women",
+  },
+  {
+    slug: "about",
+    text: "About",
+    url: "/about",
+  },
+  {
+    slug: "contact",
+    text: "Contact",
+    url: "/contact",
+  },
+];
