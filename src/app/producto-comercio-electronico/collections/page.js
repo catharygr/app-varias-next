@@ -18,27 +18,27 @@ import iconMenu from "../image/icon-menu.svg";
 export default function Collections() {
   return (
     <div className={styles.container}>
-      {data.map(({ id, name, image, price, slug }) => (
+      {data.map(({ id, name, price, slug }) => (
         <div key={id} className={styles.producto}>
-          <Image src={product1} alt={name} />
           <Image src={product1A} alt={name} />
-          <Image src={product2} alt={name} />
+          <Image src={product1} alt={name} />
           <Image src={product2A} alt={name} />
-          <Image src={product3} alt={name} />
+          <Image src={product2} alt={name} />
           <Image src={product3A} alt={name} />
-          <Image src={product4} alt={name} />
+          <Image src={product3} alt={name} />
           <Image src={product4A} alt={name} />
-          <Image src={iconPlus} alt={name} />
-          <Image src={iconMinus} alt={name} />
-          <Image src={iconClose} alt={name} />
-          <Image src={iconDelete} alt={name} />
-          <Image src={iconMenu} alt={name} />
+          <Image src={product4} alt={name} />
 
           <h3>Sneaker Company</h3>
           <h2>Fall Limited Edition Sneakers</h2>
           <h3>{name}</h3>
           <p>${price}</p>
           <p>{slug}</p>
+          <Image src={iconPlus} alt={name} />
+          <Image src={iconMinus} alt={name} />
+          <Image src={iconClose} alt={name} />
+          <Image src={iconDelete} alt={name} />
+          <Image src={iconMenu} alt={name} />
         </div>
       ))}
     </div>
@@ -48,6 +48,7 @@ export default function Collections() {
 const data = [
   {
     id: "1",
+    company: "Sneaker Company",
     description:
       "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
     image: "/image/product-1.jpg",

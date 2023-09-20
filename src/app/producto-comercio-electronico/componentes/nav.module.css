@@ -1,14 +1,3 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 900px;
-  border-bottom: 1px solid #999;
-  padding: 1rem;
-  gap: 3rem;
-  margin-left: 4rem;
-}
-
 .icon {
   margin-left: 10rem;
 }
@@ -37,4 +26,15 @@
   background-color: #999;
   border-radius: 10px;
   z-index: -1;
+}
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #999;
+    padding: 1rem;
+    gap: 3rem;
+    margin-left: 4rem;
+  }
 }
