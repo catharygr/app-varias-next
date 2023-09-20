@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import styles from "./nav.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../image/componentes/logo.svg";
-import icon from "./image/componentes/icon-cart.svg";
+import logo from "../image//logo.svg";
+import icon from "../image/icon-cart.svg";
 import { useState, useId } from "react";
 
 export default function Nav() {
