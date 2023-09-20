@@ -8,7 +8,7 @@ export default function Collections() {
       <h2>Fall Limited Edition Sneakers</h2>
       {data.map(({ id, image, name, price, slug }) => (
         <div key={id} className={styles.producto}>
-          <img src={image} alt={name} />
+          {/* <img src={image} alt={name} /> */}
           <h3>{name}</h3>
           <p>${price}</p>
           <a href={`/collections/${slug}`}>Ver producto</a>
