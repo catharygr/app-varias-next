@@ -51,26 +51,26 @@ const data = [
   {
     slug: "collections",
     text: "Collections",
-    url: "/collections",
+    url: "/producto-comercio-electronico/collections",
   },
   {
     slug: "men",
     text: "Men",
-    url: "/men",
+    url: "/producto-comercio-electronico/men",
   },
   {
     slug: "women",
     text: "Women",
-    url: "/women",
+    url: "/producto-comercio-electronico/women",
   },
   {
     slug: "about",
     text: "About",
-    url: "/about",
+    url: "/producto-comercio-electronico/about",
   },
   {
     slug: "contact",
     text: "Contact",
-    url: "/contact",
+    url: "/producto-comercio-electronico/contact",
   },
 ];
