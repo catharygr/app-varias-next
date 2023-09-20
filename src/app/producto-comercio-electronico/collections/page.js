@@ -1,5 +1,7 @@
 '"use client";';
 import styles from "./collections.module.css";
+import Image from "next/image";
+import product1 from "../image/image-product-4.jpg";
 
 export default function Collections() {
   return (
@@ -8,7 +10,7 @@ export default function Collections() {
       <h2>Fall Limited Edition Sneakers</h2>
       {data.map(({ id, image, name, price, slug }) => (
         <div key={id} className={styles.producto}>
-          {/* <img src={image} alt={name} /> */}
+          <Image src={product1} alt={name} />
           <h3>{name}</h3>
           <p>${price}</p>
           <a href={`/collections/${slug}`}>Ver producto</a>
