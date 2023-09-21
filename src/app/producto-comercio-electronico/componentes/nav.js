@@ -11,39 +11,40 @@ export default function Nav() {
   const [hoveredNavItem, setHoveredNavItem] = useState(null);
   const id = useId();
   return (
-    <nav
+    <header
       className={styles.container}
       onMouseLeave={() => setHoveredNavItem(null)}
     >
-      <div className={styles.image}>
+      <div className={styles.logo}>
         <Image src={logo} alt="Logo de la empresa" />
       </div>
+      <nav className={styles.nav}>
+        <ul className={styles.ul}>
+          {data.map(({ slug, text, url }) => (
+            <li key={slug}>
+              {hoveredNavItem === slug && (
+                <motion.div
+                  layoutId={id}
+                  className={styles.fondo}
+                  initial={{
+                    borderRadius: 10,
+                  }}
+                />
+              )}
 
-      <ul className={styles.ul}>
-        {data.map(({ slug, text, url }) => (
-          <li key={slug}>
-            {hoveredNavItem === slug && (
-              <motion.div
-                layoutId={id}
-                className={styles.fondo}
-                initial={{
-                  borderRadius: 10,
-                }}
-              />
-            )}
-
-            <Link
-              className={styles.a}
-              href={url}
-              onMouseEnter={() => setHoveredNavItem(slug)}
-            >
-              {text}
-            </Link>
-          </li>
-        ))}
-      </ul>
+              <Link
+                className={styles.a}
+                href={url}
+                onMouseEnter={() => setHoveredNavItem(slug)}
+              >
+                {text}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <Image className={styles.icon} src={icon} alt="Icono de carrito" />
-    </nav>
+    </header>
   );
 }
 
