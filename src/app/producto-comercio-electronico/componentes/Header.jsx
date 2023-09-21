@@ -9,7 +9,9 @@ export default function Header() {
   return (
     <header className={styles.container}>
       <div>
-        <button>Hola</button>
+        <button>
+          <Menu className={styles.hamburgerBtn} />
+        </button>
       </div>
       <div className={styles.logo}>
         <Image src={logo} alt="Logo de la empresa" />
