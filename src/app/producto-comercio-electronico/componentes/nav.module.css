@@ -46,6 +46,22 @@
   transform: scale(1.1);
 }
 
+.navigationList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style-type: none;
+  padding: 0px;
+}
+.navigationList a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+.navigationList a:hover {
+  color: hsl(350deg 100% 40%);
+}
+
 .container {
   display: flex;
   justify-content: flex-start;

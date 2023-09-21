@@ -14,7 +14,7 @@ export default function Header() {
       <div>
         <button onClick={setEstaMenuAbierto}>
           <Menu className={styles.hamburgerBtn} />
-          {estaMenuAbierto && <Nav />}
+          {estaMenuAbierto && <Nav className={styles.navigationList} />}
         </button>
       </div>
       <div className={styles.logo}>

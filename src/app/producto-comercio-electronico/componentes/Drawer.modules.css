@@ -1,0 +1,50 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+.wrapper {
+  position: fixed;
+  inset: 0;
+  padding: 16px;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background: hsl(350deg 100% 30% / 0.75);
+  backdrop-filter: blur(3px);
+  animation: fadeIn 850ms cubic-bezier(0.14, 0.78, 0.36, 1);
+}
+.drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  max-width: 300px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 32px;
+  animation: slideIn 500ms cubic-bezier(0.14, 0.78, 0.36, 1);
+}
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  background: hsl(350deg 100% 90%);
+  border-radius: 4px;
+}
