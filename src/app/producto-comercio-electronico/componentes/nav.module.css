@@ -10,12 +10,6 @@
   order: 2;
 }
 
-.ul {
-  display: flex;
-  justify-content: center;
-  gap: 0.6vw;
-}
-
 .ul li {
   position: relative;
   list-style: none;
@@ -47,7 +41,17 @@
   margin: 0 auto;
 }
 
+.ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6vw;
+}
+
 @media (min-width: 50rem) {
+  .ul {
+    flex-direction: row;
+  }
   .icon {
     order: 3;
   }
