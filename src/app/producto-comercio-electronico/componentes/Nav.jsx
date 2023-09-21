@@ -47,7 +47,7 @@ const data = [
   {
     slug: "men",
     text: "Men",
-    url: "/producto-comercio-electronico/men",
+    url: "#",
   },
   {
     slug: "women",

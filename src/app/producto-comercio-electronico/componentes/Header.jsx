@@ -8,9 +8,10 @@ import { Menu } from "react-feather";
 import { useState } from "react";
 import Drawer from "./Drawer";
 import VisuallyHidden from "./VisuallyHidden";
+import useToggle from "./use-toggle";
 
 export default function Header() {
-  const [estaMenuAbierto, setEstaMenuAbierto] = useState(false);
+  const [estaMenuAbierto, setEstaMenuAbierto] = useToggle(false);
   return (
     <header className={styles.container}>
       <div>
