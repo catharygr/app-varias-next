@@ -6,6 +6,7 @@ import styles from "./nav.module.css";
 import Nav from "./Nav";
 import { Menu } from "react-feather";
 import { useState } from "react";
+import Drawer from "./Drawer";
 
 export default function Header() {
   const [estaMenuAbierto, setEstaMenuAbierto] = useState(false);
@@ -14,8 +15,12 @@ export default function Header() {
       <div>
         <button onClick={setEstaMenuAbierto}>
           <Menu className={styles.hamburgerBtn} />
-          {estaMenuAbierto && <Nav className={styles.navigationList} />}
         </button>
+        {estaMenuAbierto && (
+          <Drawer>
+            <Nav className={styles.navigationList} />
+          </Drawer>
+        )}
       </div>
       <div className={styles.logo}>
         <Image src={logo} alt="Logo de la empresa" />

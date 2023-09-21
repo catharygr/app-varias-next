@@ -2,7 +2,6 @@ import React from "react";
 import { X as Close } from "react-feather";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
-
 import styles from "./Drawer.module.css";
 
 function Drawer({ handleDismiss, children }) {
