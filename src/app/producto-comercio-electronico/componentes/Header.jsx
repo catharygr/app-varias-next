@@ -7,17 +7,23 @@ import Nav from "./Nav";
 import { Menu } from "react-feather";
 import { useState } from "react";
 import Drawer from "./Drawer";
+import VisuallyHidden from "./VisuallyHidden";
 
 export default function Header() {
   const [estaMenuAbierto, setEstaMenuAbierto] = useState(false);
   return (
     <header className={styles.container}>
       <div>
-        <button onClick={setEstaMenuAbierto}>
-          <Menu className={styles.hamburgerBtn} />
+        <button
+          onClick={setEstaMenuAbierto}
+          className={styles.hamburgerBtn}
+          aria-expanded={estaMenuAbierto}
+        >
+          <Menu aria-hidden="true" focusable="false" />
+          <VisuallyHidden>Menu</VisuallyHidden>
         </button>
         {estaMenuAbierto && (
-          <Drawer>
+          <Drawer handleDismiss={setEstaMenuAbierto}>
             <Nav className={styles.navigationList} />
           </Drawer>
         )}

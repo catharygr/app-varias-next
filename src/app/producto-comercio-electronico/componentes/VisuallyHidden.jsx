@@ -1,5 +1,5 @@
 const hiddenStyles = {
-  display: inline - block,
+  display: "inline-block",
   position: "absolute",
   overflow: "hidden",
   clip: "rect(0 0 0 0)",
