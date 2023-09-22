@@ -67,9 +67,10 @@
   justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid #999;
-  padding: 1rem;
+  padding: 1rem 0;
   gap: 3vw;
-  max-width: 1200px;
+  width: 95vw;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
