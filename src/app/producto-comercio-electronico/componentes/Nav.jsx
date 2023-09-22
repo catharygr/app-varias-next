@@ -11,7 +11,7 @@ export default function Nav() {
 
   return (
     <nav className={styles.nav}>
-      <ul className={styles.ul}>
+      <ul className={styles.ul} onMouseLeave={() => setHoveredNavItem(null)}>
         {data.map(({ slug, text, url }) => (
           <li key={slug}>
             {hoveredNavItem === slug && (

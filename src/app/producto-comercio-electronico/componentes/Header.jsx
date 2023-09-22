@@ -12,7 +12,28 @@ import useToggle from "./use-toggle";
 
 export default function Header() {
   const [estaMenuAbierto, setEstaMenuAbierto] = useToggle(false);
-  const [esMovil, setEsMovil] = useState(false);
+  const [esMovil, setEsMovil] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth < 800) {
+      setEsMovil(true);
+    } else {
+      setEsMovil(false);
+    }
+
+    function handleResize() {
+      if (window.innerWidth < 800) {
+        setEsMovil(true);
+      } else {
+        setEsMovil(false);
+      }
+    }
+    const listener = window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", listener);
+    };
+  }, []);
 
   return (
     <header className={styles.container}>
@@ -36,7 +57,7 @@ export default function Header() {
         <Nav className={styles.navigationList} />
       )}
       <div className={styles.logo}>
-        <Image src={logo} alt="Logo de la empresa" />
+        <Image priority={true} src={logo} alt="Logo de la empresa" />
       </div>
       <Image className={styles.icon} src={icon} alt="Icono de carrito" />
     </header>
