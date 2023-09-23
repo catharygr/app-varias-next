@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Drawer from "./Drawer";
 import VisuallyHidden from "./VisuallyHidden";
 import useToggle from "./use-toggle";
+import Collections from "./Collection";
 
 export default function Header() {
   const [estaMenuAbierto, setEstaMenuAbierto] = useToggle(false);
@@ -36,30 +37,35 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={styles.container}>
-      {esMovil ? (
-        <div>
-          <button
-            onClick={setEstaMenuAbierto}
-            className={styles.hamburgerBtn}
-            aria-expanded={estaMenuAbierto}
-          >
-            <Menu aria-hidden="true" focusable="false" />
-            <VisuallyHidden>Menu</VisuallyHidden>
-          </button>
-          {estaMenuAbierto && (
-            <Drawer handleDismiss={setEstaMenuAbierto}>
-              <Nav className={styles.navigationList} />
-            </Drawer>
-          )}
+    <>
+      <header className={styles.container}>
+        {esMovil ? (
+          <div>
+            <button
+              onClick={setEstaMenuAbierto}
+              className={styles.hamburgerBtn}
+              aria-expanded={estaMenuAbierto}
+            >
+              <Menu aria-hidden="true" focusable="false" />
+              <VisuallyHidden>Menu</VisuallyHidden>
+            </button>
+            {estaMenuAbierto && (
+              <Drawer handleDismiss={setEstaMenuAbierto}>
+                <Nav className={styles.navigationList} />
+              </Drawer>
+            )}
+          </div>
+        ) : (
+          <Nav className={styles.navigationList} />
+        )}
+        <div className={styles.logo}>
+          <Image priority={true} src={logo} alt="Logo de la empresa" />
         </div>
-      ) : (
-        <Nav className={styles.navigationList} />
-      )}
-      <div className={styles.logo}>
-        <Image priority={true} src={logo} alt="Logo de la empresa" />
+        <Image className={styles.icon} src={icon} alt="Icono de carrito" />
+      </header>
+      <div>
+        <Collections />
       </div>
-      <Image className={styles.icon} src={icon} alt="Icono de carrito" />
-    </header>
+    </>
   );
 }
