@@ -1,0 +1,13 @@
+.container {
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carruselIzq {
+  background-color: hsla(0, 66%, 65%, 0.5);
+}
+
+.carruselDer {
+  background-color: hsla(250, 66%, 65%, 0.5);
+}
