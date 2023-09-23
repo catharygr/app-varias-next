@@ -5,32 +5,24 @@
   width: 90vw;
   max-width: 1000px;
   margin: 2rem auto;
-  padding: 3rem;
 }
 
 @media (min-width: 40rem) {
   .container {
     grid-template-columns: 1fr 5rem 1fr;
     grid-template-rows: auto;
+    padding: 3rem;
   }
 }
 
 .carruselIzq {
-  /* background-color: hsla(0, 66%, 65%, 0.5); */
   grid-row: 2 / 3;
 }
 
-.carruselIzq p {
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 1.5;
-
-  margin: 0;
-  padding: 0 1rem;
-}
-
-.curve {
-  color: #ffc0cb;
+.p {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.4;
 }
 
 .carruselDer {
@@ -38,13 +30,16 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   place-items: center;
-  /* background-color: hsla(250, 66%, 65%, 0.5); */
   grid-row: 1 / 2;
 }
 
 .bg {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
+}
+
+.quotes {
+  translate: 50% 50%;
 }
 
 .persona {

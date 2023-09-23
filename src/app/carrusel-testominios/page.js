@@ -11,7 +11,7 @@ export default function Carrusel() {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "bottom left",
   };
-  console.log(curve);
+
   return (
     <div style={miestilo} className={styles.container}>
       <div className={styles.carruselDer}>
@@ -19,9 +19,9 @@ export default function Carrusel() {
         <Image className={styles.persona} src={tanya} alt="tanya" />
       </div>
       <div className={styles.carruselIzq}>
-        {/* <Image className={styles.quotes} src={quotes} alt="quotes" />
-        <Image className={styles.curve} src={curve} alt="curve" />
-        <p>
+        <Image className={styles.quotes} src={quotes} alt="quotes" />
+
+        <p className={styles.p}>
           I amve been interested in coding for a while but never taken the jump,
           until now. I could not recommend this course enough. I am now in the
           job of my dreams and so excited about the future.{" "}
@@ -29,7 +29,7 @@ export default function Carrusel() {
         <div>
           <p> Tanya Sinclair </p>
           <p> UX Engineer </p>
-        </div> */}
+        </div>
       </div>
     </div>
   );
