@@ -72,7 +72,11 @@
     grid-column: 2 / 4;
     grid-row: 1 / -1;
   }
+  .p {
+    text-align: left;
+  }
   .profesion {
     text-align: left;
+    margin-top: 3rem;
   }
 }
