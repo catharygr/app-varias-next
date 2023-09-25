@@ -26,9 +26,10 @@ export default function Carrusel() {
           until now. I could not recommend this course enough. I am now in the
           job of my dreams and so excited about the future.{" "}
         </p>
-        <div>
+        <div className={styles.profesion}>
           <p> Tanya Sinclair </p>
-          <p> UX Engineer </p>
+
+          <span> UX Engineer </span>
         </div>
       </div>
     </div>

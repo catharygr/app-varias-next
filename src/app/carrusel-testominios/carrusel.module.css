@@ -23,6 +23,19 @@
   font-size: 1.6rem;
   font-weight: 200;
   line-height: 1.4;
+  text-align: center;
+}
+
+.profesion {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.profesion span {
+  font-weight: 100;
 }
 
 .carruselDer {
@@ -58,5 +71,8 @@
   .carruselDer {
     grid-column: 2 / 4;
     grid-row: 1 / -1;
+  }
+  .profesion {
+    text-align: left;
   }
 }
