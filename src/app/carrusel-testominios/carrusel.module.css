@@ -64,9 +64,9 @@
 }
 
 .btn {
-  /* grid-row: 1 / 1; */
-  /* grid-column: 1 / 1; */
-  /* place-self: center; */
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+  align-self: self-end;
   border-radius: 25px;
   width: 100px;
   height: 50px;
@@ -74,6 +74,15 @@
   cursor: pointer;
   outline: none;
   background-color: whitesmoke;
+  box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.3);
+}
+
+.chevron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  color: #888;
 }
 
 @media (min-width: 40rem) {
@@ -94,5 +103,10 @@
     text-align: left;
     margin-top: 3rem;
     gap: 0.5rem;
+  }
+
+  .btn {
+    justify-self: left;
+    margin: 1rem 8rem;
   }
 }

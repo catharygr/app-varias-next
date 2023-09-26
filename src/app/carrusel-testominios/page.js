@@ -22,8 +22,10 @@ export default function Carrusel() {
         <Image className={styles.bg} src={bg} alt="bg" />
         <Image className={styles.persona} src={tanya} alt="tanya" />
         <button className={styles.btn}>
-          <ChevronLeft />
-          <ChevronRight />
+          <div className={styles.chevron}>
+            <ChevronLeft />
+            <ChevronRight />
+          </div>
         </button>
       </div>
       <div className={styles.carruselIzq}>
