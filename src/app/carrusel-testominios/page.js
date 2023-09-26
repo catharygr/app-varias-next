@@ -49,34 +49,5 @@ export default function Carrusel() {
     backgroundPosition: "bottom left",
   };
 
-  return (
-    <div style={miestilo} className={styles.container}>
-      <div className={styles.carruselDer}>
-        <Image className={styles.bg} src={bg} alt="bg" />
-        <Image
-          className={styles.persona}
-          src={persona.imagen}
-          alt={persona.nombre}
-        />
-        <button
-          className={`${styles.btn} `}
-          onClick={() => cambiarPersona("anterior")}
-        >
-          <div className={styles.chevron}>
-            <ChevronLeft />
-            <ChevronRight />
-          </div>
-        </button>
-      </div>
-      <div className={styles.carruselIzq}>
-        <Image className={styles.quotes} src={quotes} alt="quotes" />
-
-        <p className={styles.p}>{persona.testimonio}</p>
-        <div className={styles.parrafo}>
-          <p>{persona.nombre}</p>
-          <p className={styles.profesion}>{persona.profesion}</p>
-        </div>
-      </div>
-    </div>
-  );
+  return <div style={miestilo} className={styles.container}></div>;
 }
