@@ -64,8 +64,9 @@
 }
 
 .btn {
-  grid-row: 1 / 1;
-  grid-column: 1 / 1;
+  /* grid-row: 1 / 1; */
+  /* grid-column: 1 / 1; */
+  /* place-self: center; */
   border-radius: 25px;
   width: 100px;
   height: 50px;
