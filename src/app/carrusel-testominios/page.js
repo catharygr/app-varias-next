@@ -24,12 +24,11 @@ export default function Carrusel() {
         <p className={styles.p}>
           I amve been interested in coding for a while but never taken the jump,
           until now. I could not recommend this course enough. I am now in the
-          job of my dreams and so excited about the future.{" "}
+          job of my dreams and so excited about the future.
         </p>
-        <div className={styles.profesion}>
-          <p> Tanya Sinclair </p>
-
-          <span> UX Engineer </span>
+        <div className={styles.parrafo}>
+          <p>Tanya Sinclair</p>
+          <p className={styles.profesion}> UX Engineer </p>
         </div>
       </div>
     </div>
