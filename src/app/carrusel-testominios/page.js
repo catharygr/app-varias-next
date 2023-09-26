@@ -1,9 +1,13 @@
+"use client";
 import styles from "./carrusel.module.css";
 import Image from "next/image";
 import bg from "@/app/carrusel-testominios/images/pattern-bg.svg";
 import tanya from "@/app/carrusel-testominios/images/image-tanya.jpg";
 import quotes from "@/app/carrusel-testominios/images/pattern-quotes.svg";
 import curve from "@/app/carrusel-testominios/images/pattern-curve.svg";
+import john from "@/app/carrusel-testominios/images/image-john.jpg";
+import { ChevronLeft } from "react-feather";
+import { ChevronRight } from "react-feather";
 
 export default function Carrusel() {
   const miestilo = {
@@ -17,6 +21,10 @@ export default function Carrusel() {
       <div className={styles.carruselDer}>
         <Image className={styles.bg} src={bg} alt="bg" />
         <Image className={styles.persona} src={tanya} alt="tanya" />
+        <button className={styles.btn}>
+          <ChevronLeft />
+          <ChevronRight />
+        </button>
       </div>
       <div className={styles.carruselIzq}>
         <Image className={styles.quotes} src={quotes} alt="quotes" />

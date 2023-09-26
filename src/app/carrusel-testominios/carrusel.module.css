@@ -63,6 +63,18 @@
   box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.3);
 }
 
+.btn {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+  border-radius: 25px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: whitesmoke;
+}
+
 @media (min-width: 40rem) {
   .carruselIzq {
     grid-column: 1 / 3;
