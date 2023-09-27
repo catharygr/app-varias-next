@@ -40,8 +40,12 @@ export default function Collection() {
       <div className={styles.contenido}>
         <h6>{company}</h6>
         <h1>{name}</h1>
-        <h4>{description}</h4> <p>{price}</p>
-        <p>{discont}</p>
+        <h4>{description}</h4>
+        <p>
+          {`$${price}.00`}
+          <span>{`${discont}%`}</span>
+        </p>
+
         <div className={styles.cantidad}>
           <button className={styles.btn}>
             <Minus className={styles.icons} size={15} />
