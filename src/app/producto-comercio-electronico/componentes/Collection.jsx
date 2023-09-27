@@ -56,6 +56,7 @@ const data = [
     image: "/image/product-4.jpg",
     name: "Fall Limited Edition Sneakers",
     price: 125,
+    discont: 50,
     slug: "fall-limited-edition-sneakers",
   },
 ];
