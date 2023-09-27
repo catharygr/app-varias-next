@@ -1,4 +1,3 @@
-'"use client";';
 import styles from "./collections.module.css";
 import Image from "next/image";
 import product1 from "../image/image-product-1-thumbnail.jpg";
