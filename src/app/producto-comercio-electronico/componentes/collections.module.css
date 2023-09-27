@@ -15,30 +15,27 @@
   }
 }
 
-.producto img {
-  max-width: 100%;
-  height: auto;
-}
-
 .contenido {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1rem;
 }
 
-.contenido h3 {
-  font-size: 24px;
-  margin: 0;
+.contenido h6 {
+  color: orange;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
 }
 
-.contenido h2 {
-  font-size: 20px;
-  margin: 0;
+.contenido h1 {
+  letter-spacing: 2px;
+  font-size: 2.5rem;
 }
 
 .contenido h4 {
   font-size: 16px;
-  margin: 0;
   color: #333;
 }
 
@@ -47,9 +44,34 @@
   margin: 5px 0;
 }
 
-/* Estilos para los íconos */
-.contenido img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+.cantidad {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgb(rgb(157, 157, 195));
+  border: none;
+  padding: 0.7rem 1.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btnCarrito {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.icons {
+  color: orange;
+  stroke-width: 5px;
 }
