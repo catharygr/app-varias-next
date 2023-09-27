@@ -6,3 +6,11 @@
   max-widt: 1000px;
   margin: 2rem auto;
 }
+
+@media (min-width: 40rem) {
+  .container {
+    grid-template-columns: 1fr 5rem 1fr;
+    grid-template-rows: auto;
+    padding: 3rem;
+  }
+}

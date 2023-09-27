@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import Drawer from "./Drawer";
 import VisuallyHidden from "./VisuallyHidden";
 import useToggle from "./use-toggle";
-import Collections from "./Collection";
+import Collections from "./Collections";
 
 export default function Header() {
   const [estaMenuAbierto, setEstaMenuAbierto] = useToggle(false);
