@@ -10,40 +10,7 @@ import product4 from "../image/image-product-4-thumbnail.jpg";
 import product4A from "../image/image-product-4.jpg";
 import { Minus, Plus } from "react-feather";
 
-const data = {
-  company: "Sneaker Company",
-  description:
-    "These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
-  name: "Fall Limited Edition Sneakers",
-  price: 250,
-  discont: 50,
-  images: [
-    {
-      id: "1",
-      urlGrande: product1A,
-      urlPequena: product1,
-      alt: "product1",
-    },
-    {
-      id: "2",
-      urlGrande: product2A,
-      urlPequena: product2,
-      alt: "product2",
-    },
-    {
-      id: "3",
-      urlGrande: product3A,
-      urlPequena: product3,
-      alt: "product3",
-    },
-    {
-      id: "4",
-      urlGrande: product4A,
-      urlPequena: product4,
-      alt: "product4",
-    },
-  ],
-};
+//
 
 export default function Collection() {
   const { id, company, name, description, price, discont, images } = data;
