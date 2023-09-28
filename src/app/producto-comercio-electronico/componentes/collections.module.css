@@ -1,11 +1,9 @@
 /* collections.module.css */
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  text-align: center;
-  padding: 20px;
+  display: Flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contenido {
