@@ -48,15 +48,6 @@ const data = {
 export default function Collection() {
   const { id, company, name, description, price, discont, images } = data;
 
-  const mapeo = images.map((item) => {
-    return (
-      <div key={item.id}>
-        <Image src={item.urlPequena} alt={item.alt} />
-        <Image src={item.urlGrande} alt={item.alt} />
-      </div>
-    );
-  });
-
   return (
     <div className={styles.container}>
       <div key={id} className={styles.producto}>
