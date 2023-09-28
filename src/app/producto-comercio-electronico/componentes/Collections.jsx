@@ -51,28 +51,50 @@ export default function Collection() {
   const [imagen, setImagen] = useState(data.images[0].urlGrande);
   const { id, company, name, description, price, discont, images } = data;
 
-  function handleImage() {
-    setImagen(images[0].urlGrande);
+  function handleImageGrande() {
+    if (imagen === images[0].urlGrande) {
+      setImagen(images[1].urlGrande);
+    } else if (imagen === images[1].urlGrande) {
+      setImagen(images[2].urlGrande);
+    } else if (imagen === images[2].urlGrande) {
+      setImagen(images[3].urlGrande);
+    } else if (imagen === images[3].urlGrande) {
+      setImagen(images[4].urlGrande);
+    }
+  }
+
+  function handleImagePequena() {
+    if (imagen === images[0].urlPequena) {
+      setImagen(images[1].urlGrande);
+    } else if (imagen === images[3].urlPequena) {
+      setImagen(images[2].urlGrande);
+    } else if (imagen === images[2].urlPequena) {
+      setImagen(images[3].urlGrande);
+    } else if (imagen === images[1].urlPequena) {
+      setImagen(images[4].urlGrande);
+    }
   }
 
   return (
     <div className={styles.container}>
       <div className={styles.producto}>
-        <button onClick={handleImage} className={styles.btnVolver}>
+        <button onClick={handleImageGrande} className={styles.btnVolver}>
           <Image
             src={images[0].urlGrande}
             alt={images[0].alt}
             className={styles.imagenGrande}
           />
-          {images.map((image, id) => (
+        </button>
+        {images.map((image, id) => (
+          <button onClick={handleImagePequena} className={styles.btnVolver}>
             <Image
               key={id}
               src={image.urlPequena}
               alt={image.alt}
               className={styles.imagenPequena}
             />
-          ))}
-        </button>
+          </button>
+        ))}
       </div>
       <div className={styles.contenido}>
         <h6>{company}</h6>

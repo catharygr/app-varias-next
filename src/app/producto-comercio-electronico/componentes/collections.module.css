@@ -11,6 +11,7 @@
 
 .imagenGrande {
   display: block;
+  width: 100%;
 }
 
 .imagenPequena {
@@ -94,15 +95,23 @@
 
 @media (min-width: 40rem) {
   .container {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     gap: 2rem;
   }
 
+  .producto {
+    display: flex;
+    align-items: start;
+  }
+
   .imagenPequena {
-    .imagenGrande {
-      display: block;
-    }
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-between;
+  }
+  .imagenGrande {
+    border-radius: 50px;
   }
 }
