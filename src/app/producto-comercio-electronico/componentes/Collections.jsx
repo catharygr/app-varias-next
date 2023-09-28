@@ -11,6 +11,7 @@ import product4 from "../image/image-product-4-thumbnail.jpg";
 import product4A from "../image/image-product-4.jpg";
 import { Minus, Plus } from "react-feather";
 import { useState } from "react";
+import { ArrowLeftCircle, ArrowRightCircle } from "react-feather";
 
 const data = {
   company: "Sneaker Company",
@@ -80,7 +81,9 @@ export default function Collection() {
       <div className={styles.producto}>
         <div className={styles.imagenGrande}>
           <button onClick={handleImageGrande} className={styles.btnVolver}>
+            <ArrowLeftCircle className={styles.iconLeft} size={30} />
             <Image src={images[0].urlGrande} alt={images[0].alt} />
+            <ArrowRightCircle className={styles.iconRight} size={30} />
           </button>
         </div>
         <div className={styles.imagenPequena}>

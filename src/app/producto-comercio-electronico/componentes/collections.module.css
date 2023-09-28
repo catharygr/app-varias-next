@@ -5,15 +5,24 @@
   align-items: center;
 }
 
-.producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.imagenGrande {
+  display: grid;
+  width: 100%;
 }
 
-.imagenGrande {
-  display: block;
-  width: 100%;
+.btnVolver {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.iconLeft {
+  grid-column: 1 / 3;
+  grid-row: 1 / -1;
+}
+
+.iconRight {
+  grid-column: 2 / 4;
+  grid-row: 1 / -1;
 }
 
 .imagenPequena {
@@ -103,6 +112,7 @@
   }
 
   .producto {
+    justify-self: center;
   }
 
   .imagenPequena {
