@@ -46,7 +46,7 @@ const data = {
 };
 
 export default function Collection() {
-  const { id, company, name, description, price, discont } = data[0];
+  const { id, company, name, description, price, discont } = data;
 
   return (
     <div className={styles.container}>
