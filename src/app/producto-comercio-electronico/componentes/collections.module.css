@@ -1,6 +1,8 @@
 .container {
   display: Flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .producto {
@@ -101,15 +103,10 @@
   }
 
   .producto {
-    display: flex;
-    align-items: start;
   }
 
   .imagenPequena {
-    display: flex;
-    flex-direction: row;
-    width: 100px;
-    justify-content: space-between;
+    justify-self: center;
   }
   .imagenGrande {
     border-radius: 50px;

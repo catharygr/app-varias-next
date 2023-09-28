@@ -78,23 +78,18 @@ export default function Collection() {
   return (
     <div className={styles.container}>
       <div className={styles.producto}>
-        <button onClick={handleImageGrande} className={styles.btnVolver}>
-          <Image
-            src={images[0].urlGrande}
-            alt={images[0].alt}
-            className={styles.imagenGrande}
-          />
-        </button>
-        {images.map((image, id) => (
-          <button onClick={handleImagePequena} className={styles.btnVolver}>
-            <Image
-              key={id}
-              src={image.urlPequena}
-              alt={image.alt}
-              className={styles.imagenPequena}
-            />
+        <div className={styles.imagenGrande}>
+          <button onClick={handleImageGrande} className={styles.btnVolver}>
+            <Image src={images[0].urlGrande} alt={images[0].alt} />
           </button>
-        ))}
+        </div>
+        <div className={styles.imagenPequena}>
+          {images.map((image, id) => (
+            <button onClick={handleImagePequena} className={styles.btnVolver}>
+              <Image key={id} src={image.urlPequena} alt={image.alt} />
+            </button>
+          ))}
+        </div>
       </div>
       <div className={styles.contenido}>
         <h6>{company}</h6>
