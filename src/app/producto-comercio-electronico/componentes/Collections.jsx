@@ -52,30 +52,6 @@ export default function Collection() {
   const [imagen, setImagen] = useState(data.images[0].urlGrande);
   const { id, company, name, description, price, discont, images } = data;
 
-  function handleImageGrande() {
-    if (imagen === images[0].urlGrande) {
-      setImagen(images[1].urlGrande);
-    } else if (imagen === images[1].urlGrande) {
-      setImagen(images[2].urlGrande);
-    } else if (imagen === images[2].urlGrande) {
-      setImagen(images[3].urlGrande);
-    } else if (imagen === images[3].urlGrande) {
-      setImagen(images[4].urlGrande);
-    }
-  }
-
-  function handleImagePequena() {
-    if (imagen === images[0].urlPequena) {
-      setImagen(images[1].urlGrande);
-    } else if (imagen === images[3].urlPequena) {
-      setImagen(images[2].urlGrande);
-    } else if (imagen === images[2].urlPequena) {
-      setImagen(images[3].urlGrande);
-    } else if (imagen === images[1].urlPequena) {
-      setImagen(images[4].urlGrande);
-    }
-  }
-
   return (
     <div className={styles.container}>
       <div className={styles.producto}>

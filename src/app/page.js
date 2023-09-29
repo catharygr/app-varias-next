@@ -11,6 +11,9 @@ export default function Home() {
       <Link className={styles.about} href="/carrusel-testominios">
         Carrusel de testimonios
       </Link>
+      <Link className={styles.about} href="/pagina-destino-seguro">
+        Página de destino seguro
+      </Link>
     </main>
   );
 }
