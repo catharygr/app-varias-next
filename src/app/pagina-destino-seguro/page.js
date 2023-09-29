@@ -27,54 +27,66 @@ export default function PaginaDestinoSeguro() {
 
   return (
     <div>
+      <nav>
+        <Image src={Logo} alt="logo" />
+
+        <div className={`pNav ${isHamburgerActive ? "navMobile" : ""}`}>
+          <h3 className={styles.h3}>Sobre Nosotros</h3>
+          <h3 className={styles.h3}>Blog</h3>
+          <h3 className={styles.h3}>Cuenta</h3>
+          <button className={styles.button}>Vista previa</button>
+          <Image src={BgPatternMobile} alt="bgPatternMobile" />
+        </div>
+
+        <div className={styles.ham} onClick={Hamburger}>
+          <Image
+            src={MenuHamburger}
+            alt="#"
+            className={isHamburgerActive ? "hidden" : "block"}
+          />
+          <Image
+            src={Close}
+            alt="#"
+            className={isHamburgerActive ? "block" : "hidden"}
+          />
+        </div>
+      </nav>
       <section className={styles.mainContainer}>
-        <nav>
-          <Image src={Logo} alt="logo" />
-
-          <div className={`p-nav ${isHamburgerActive ? "nav-mobile" : ""}`}>
-            <h3>Sobre Nosotros</h3>
-            <h3>Blog</h3>
-            <h3>Cuenta</h3>
-            <button>Vista previa</button>
-            <Image src={BgPatternMobile} alt="bg-pattern-mobile" />
-          </div>
-
-          <div className={styles.ham} onClick={Hamburger}>
-            <Image
-              src={MenuHamburger}
-              alt="#"
-              className={isHamburgerActive ? "hidden" : "block"}
-            />
-            <Image
-              src={Close}
-              alt="#"
-              className={isHamburgerActive ? "block" : "hidden"}
-            />
-          </div>
-        </nav>
         <div className={styles.content}>
           <div className={styles.mainText}>
             <div className={styles.border}></div>
-            <h1>Humanizando tu seguro.</h1>
-            <p>
+            <h1 className={styles.h1}>Humanizando tu seguro.</h1>
+            <p className={styles.p}>
               Obtén tu cobertura de seguro de vida de manera más fácil y rápida.
               Combinamos nuestra experiencia y tecnología para ayudarte a
               encontrar el plan que sea adecuado para ti. Asegúrate de que tú y
               tus seres queridos estén protegidos.
             </p>
-            <button>Ver planes</button>
-            <Image src={BgLeftMobile} alt="#" className="bg-mobile-left" />
-            <Image src={BgRightMobile} alt="#" className="bg-mobile-right" />
+            <button className={styles.button}>Ver planes</button>
+            <Image src={BgLeftMobile} alt="#" className={styles.bgMobileLeft} />
+            <Image
+              src={BgRightMobile}
+              alt="#"
+              className={styles.bgMobileRight}
+            />
           </div>
 
           <div className={styles.mainImage}>
-            <Image src={ImageIntroDesktop} alt="#" className="intro-desktop" />
-            <Image src={ImageIntroMobile} alt="#" className="intro-mobile" />
+            <Image
+              src={ImageIntroDesktop}
+              alt="#"
+              className={styles.introDesktop}
+            />
+            <Image
+              src={ImageIntroMobile}
+              alt="#"
+              className={styles.introMobile}
+            />
           </div>
         </div>
 
-        <Image src={BgLeftDesktop} alt="#" id="bg-left-desktop" />
-        <Image src={BgRightDesktop} alt="#" id="bg-right-desktop" />
+        <Image src={BgLeftDesktop} alt="#" id={styles.bgLeftDesktop} />
+        <Image src={BgRightDesktop} alt="#" id={styles.bgRightDesktop} />
       </section>
     </div>
   );

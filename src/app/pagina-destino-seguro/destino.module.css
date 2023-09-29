@@ -15,14 +15,14 @@
   width: 100%;
   z-index: 1;
 }
-.nav img {
+.nav .img {
   width: 110px;
   height: 30px;
 }
-.nav .p-nav {
+.nav .pNav {
   display: flex;
 }
-.nav .p-nav h3 {
+.nav .pNav .h3 {
   color: #494949;
   margin-right: 30px;
   font-size: 18px;
@@ -31,10 +31,10 @@
   margin-top: 7px;
   cursor: pointer;
 }
-.nav .p-nav h3:hover {
+.nav .pNav .h3:hover {
   color: black;
 }
-nav .p-nav button {
+.nav .pNav .button {
   padding: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -42,11 +42,11 @@ nav .p-nav button {
   border: 1px solid black;
   cursor: pointer;
 }
-.nav .p-nav button:hover {
+.nav .pNav .button:hover {
   background-color: black;
   color: white;
 }
-.nav .p-nav .bg-pattern-mobile {
+.nav .pNav .bgPatternMobile {
   display: none;
 }
 .nav .ham {
@@ -58,22 +58,22 @@ nav .p-nav button {
   background-color: #2d2446;
   z-index: 1;
 }
-.mainContainer #bg-left-desktop {
+.mainContainer #bgLeftDesktop {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
   position: absolute;
   top: 600px;
 }
-.mainContainer #bg-right-desktop {
+.mainContainer #bgRightDesktop {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   top: 80px;
   right: 0;
 }
-.mainContainer .bg-mobile-left,
-.mainContainer .bg-mobile-right {
+.mainContainer .bgMobileLeft,
+.mainContainer .bgMobileRight {
   display: none;
 }
 .mainContainer .content {
@@ -93,7 +93,7 @@ nav .p-nav button {
   margin-top: -30px;
   position: absolute;
 }
-.mainContainer .content .mainText h1 {
+.mainContainer .content .mainText .h1 {
   margin-top: 40px;
   color: white;
   font-size: 68px;
@@ -101,7 +101,7 @@ nav .p-nav button {
   font-weight: 400;
   line-height: 80px;
 }
-.mainContainer .content .mainText p {
+.mainContainer .content .mainText .p {
   font-size: 18px;
   color: white;
   margin-top: 40px;
@@ -109,7 +109,7 @@ nav .p-nav button {
   font-family: "Karla", sans-serif;
   width: 97%;
 }
-.mainContainer .content .mainText button {
+.mainContainer .content .mainText .button {
   color: white;
   background: none;
   border: 1px solid white;
@@ -291,29 +291,29 @@ footer .bottom .bt p:nth-child(5):hover {
   text-decoration: underline;
 } */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64rem) {
   .mainContainer {
     height: 644px;
   }
-  .mainContainer #bg-left-desktop {
+  .mainContainer #bgLeftDesktop {
     top: 550px;
     height: 20%;
   }
-  .mainContainer #bg-right-desktop {
+  .mainContainer #bgRightDesktop {
     top: 80px;
     width: 40%;
   }
   .mainContainer .content {
     max-width: 750px;
   }
-  .mainContainer .content .main-text .border {
+  .mainContainer .content .mainText .border {
     width: 150px;
     height: 2px;
     background-color: white;
     margin-top: 80px;
     position: absolute;
   }
-  .mainContainer .content .main-text h1 {
+  .mainContainer .content .mainText .h1 {
     margin-top: 150px;
     color: white;
     font-size: 50px;
@@ -321,14 +321,14 @@ footer .bottom .bt p:nth-child(5):hover {
     font-weight: 400;
     line-height: 55px;
   }
-  .mainContainer .content .main-text p {
+  .mainContainer .content .mainText .p {
     font-size: 13px;
     color: white;
     margin-top: 40px;
     line-height: 25px;
     width: 97%;
   }
-  .mainContainer .content .main-text button {
+  .mainContainer .content .mainText .button {
     color: white;
     background: none;
     border: 1px solid white;
@@ -339,24 +339,24 @@ footer .bottom .bt p:nth-child(5):hover {
     font-weight: 700;
     cursor: pointer;
   }
-  .mainContainer .content .main-image {
+  .mainContainer .content .mainImage {
     width: 410px;
     height: 550px;
     margin-left: 0px;
   }
-  .mainContainer .content .main-image img {
+  .mainContainer .content .mainImage .img {
     width: 100%;
     height: 100%;
     margin-top: 120px;
   }
 
-  .container-middle {
+  .containerMiddle {
     margin-top: 250px;
   }
-  .container-middle .content {
+  .containerMiddle .content {
     max-width: 750px;
   }
-  .container-middle .content .border-middle {
+  .containerMiddle .content .border-middle {
     width: 200px;
     height: 2px;
     background-color: gray;
@@ -364,45 +364,37 @@ footer .bottom .bt p:nth-child(5):hover {
     position: absolute;
     z-index: -1;
   }
-  .container-middle .content .h1-different {
+  .containerMiddle .content .h1-different {
     font-size: 70px;
     margin-top: 0px;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
   }
-  .container-middle .content .card-middle {
+  .containerMiddle .content .card-middle {
     margin-top: 70px;
     margin-bottom: 150px;
   }
-  .container-middle .content .card-middle .card img {
+  .containerMiddle .content .card-middle .card img {
     margin-bottom: 30px;
   }
-  .container-middle .content .card-middle .card h4 {
+  .containerMiddle .content .card-middle .card h4 {
     font-size: 27px;
     margin-bottom: 10px;
   }
-  .container-middle .content .card-middle .card p {
-    font-size: 15px;
-    color: gray;
-    font-family: "Karla", sans-serif;
-    font-weight: 400;
-    line-height: 25px;
-    width: 95%;
-  }
-  .container-middle .content .find-more {
+  .container-Middle .content .find-more {
     height: 250px;
   }
-  .container-middle .content .find-more #bg-middle-desktop {
+  .containerMiddle .content .find-more #bg-middle-desktop {
     position: absolute;
     height: 250px;
     width: 380px;
     margin-left: 370px;
     background-position: right;
   }
-  .container-middle .content .find-more .content-find-more {
+  .containerMiddle .content .find-more .content-find-more {
     margin-top: 70px;
   }
-  .container-middle .content .find-more .content-find-more h1 {
+  .containerMiddle .content .find-more .content-find-more h1 {
     font-size: 43px;
     color: white;
     font-family: "DM Serif Display", serif;
@@ -464,7 +456,7 @@ footer .bottom .bt p:nth-child(5):hover {
     text-decoration: underline;
   } */
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46rem) {
   .nav {
     display: flex;
     justify-content: space-around;
@@ -472,14 +464,14 @@ footer .bottom .bt p:nth-child(5):hover {
     height: 80px;
     z-index: 1;
   }
-  .nav img {
+  .nav .img {
     width: 110px;
     height: 30px;
   }
-  .nav .p-nav {
+  .nav .pNav {
     display: none;
   }
-  .nav .p-nav h3 {
+  .nav .pNav .h3 {
     color: white;
     margin: 30px;
     font-size: 30px;
