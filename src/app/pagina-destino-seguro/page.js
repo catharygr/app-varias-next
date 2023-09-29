@@ -1,9 +1,13 @@
+import styles from "./destino.module.css";
+import Image from "next/image";
+import Logo from "@/app/pagina-destino-seguro/images/logo.svg";
+
 export default function PaginaDestinoSeguro() {
   return (
     <div>
       <header className="header position-relative z-1">
         <section className="nav-bar container">
-          <img className="logo" src="images/logo.svg" alt="" />
+          <Image className={styles.logo} src={Logo} alt="logo" />
           <nav className="nav-menu" id="navMenu">
             <ul className="nav-lista">
               <li className="nav-item">
@@ -53,7 +57,7 @@ export default function PaginaDestinoSeguro() {
           </div>
         </section>
         <div className="header-body container">
-          <p className="header-text">Immersive experiences that deliver</p>
+          <p className="header-text">Experiencias inmersivas que ofrecen</p>
         </div>
       </header>
     </div>
