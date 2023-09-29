@@ -26,29 +26,32 @@ export default function PaginaDestinoSeguro() {
   };
 
   return (
-    <div>
+    <div className={styles.containerPrincipal}>
       <nav>
         <Image src={Logo} alt="logo" />
 
-        <div className={`pNav ${isHamburgerActive ? "navMobile" : ""}`}>
+        <div className={` pNav ${isHamburgerActive ? navMobile : ""}`}>
           <h3 className={styles.h3}>Sobre Nosotros</h3>
           <h3 className={styles.h3}>Blog</h3>
           <h3 className={styles.h3}>Cuenta</h3>
-          <button className={styles.button}>Vista previa</button>
-          <Image src={BgPatternMobile} alt="bgPatternMobile" />
+          <button className={styles.button}>
+            <Image src={BgPatternMobile} alt="bgPatternMobile" />
+          </button>
         </div>
 
         <div className={styles.ham} onClick={Hamburger}>
-          <Image
-            src={MenuHamburger}
-            alt="#"
-            className={isHamburgerActive ? "hidden" : "block"}
-          />
-          <Image
-            src={Close}
-            alt="#"
-            className={isHamburgerActive ? "block" : "hidden"}
-          />
+          <button className={styles.button}>
+            <Image
+              src={MenuHamburger}
+              alt="#"
+              className={isHamburgerActive ? "hidden" : "block"}
+            />
+            <Image
+              src={Close}
+              alt="#"
+              className={isHamburgerActive ? "block" : "hidden"}
+            />
+          </button>
         </div>
       </nav>
       <section className={styles.mainContainer}>
@@ -85,8 +88,8 @@ export default function PaginaDestinoSeguro() {
           </div>
         </div>
 
-        <Image src={BgLeftDesktop} alt="#" id={styles.bgLeftDesktop} />
-        <Image src={BgRightDesktop} alt="#" id={styles.bgRightDesktop} />
+        {/* <Image src={BgLeftDesktop} alt="#" id={styles.bgLeftDesktop} />
+        <Image src={BgRightDesktop} alt="#" id={styles.bgRightDesktop} /> */}
       </section>
     </div>
   );

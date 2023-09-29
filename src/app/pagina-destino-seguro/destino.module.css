@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
 
-.App {
+.containerPrincipal {
   position: relative;
   min-height: 100vh;
 }
@@ -148,7 +148,7 @@
     margin: auto;
   }
 }
-.containerMiddle .content .border-middle {
+.containerMiddle .content .borderMiddle {
   width: 200px;
   height: 2px;
   background-color: gray;
@@ -161,20 +161,20 @@
   font-family: "DM Serif Display", serif;
   font-weight: 400;
 }
-.containerMiddle .content .card-middle {
+.containerMiddle .content .cardMiddle {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 80px;
   margin-bottom: 150px;
 }
-.containerMiddle .content .card-middle .card img {
+.containerMiddle .content .cardMiddle .card img {
   margin-bottom: 30px;
 }
-.containerMiddle .content .card-middle .card h4 {
+.containerMiddle .content .cardMiddle .card h4 {
   font-size: 30px;
   margin-bottom: 10px;
 }
-.containerMiddle .content .card-middle .card p {
+.containerMiddle .content .cardMiddle .card p {
   font-size: 17px;
   color: gray;
   font-family: "Karla", sans-serif;
@@ -186,13 +186,13 @@
   background-color: #2d2446;
   height: 300px;
 }
-.containerMiddle .content .find-more #bg-middle-desktop {
+.containerMiddle .content .find-more #bgMiddle-desktop {
   position: absolute;
   height: 300px;
   margin-left: 480px;
   background-position: right;
 }
-.containerMiddle .content .find-more #bg-middle-mobile {
+.containerMiddle .content .find-more #bgMiddle-mobile {
   display: none;
 }
 .containerMiddle .content .find-more .content-find-more {
@@ -356,7 +356,7 @@ footer .bottom .bt p:nth-child(5):hover {
   .containerMiddle .content {
     max-width: 750px;
   }
-  .containerMiddle .content .border-middle {
+  .containerMiddle .content .borderMiddle {
     width: 200px;
     height: 2px;
     background-color: gray;
@@ -370,21 +370,21 @@ footer .bottom .bt p:nth-child(5):hover {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
   }
-  .containerMiddle .content .card-middle {
+  .containerMiddle .content .cardMiddle {
     margin-top: 70px;
     margin-bottom: 150px;
   }
-  .containerMiddle .content .card-middle .card img {
+  .containerMiddle .content .cardMiddle .card img {
     margin-bottom: 30px;
   }
-  .containerMiddle .content .card-middle .card h4 {
+  .containerMiddle .content .cardMiddle .card h4 {
     font-size: 27px;
     margin-bottom: 10px;
   }
   .container-Middle .content .find-more {
     height: 250px;
   }
-  .containerMiddle .content .find-more #bg-middle-desktop {
+  .containerMiddle .content .find-more #bgMiddle-desktop {
     position: absolute;
     height: 250px;
     width: 380px;
@@ -476,10 +476,10 @@ footer .bottom .bt p:nth-child(5):hover {
     margin: 30px;
     font-size: 30px;
   }
-  .nav .p-nav h3:nth-child(1) {
+  .nav .pNav .h3:nth-child(1) {
     margin-top: 60px;
   }
-  .nav .p-nav button {
+  .nav .pNav .button {
     width: 90%;
     font-size: 25px;
     height: 80px;
@@ -489,14 +489,14 @@ footer .bottom .bt p:nth-child(5):hover {
     color: white;
     border: 1px solid white;
   }
-  .nav .bg-pattern-mobile {
+  .nav .bgPatternMobile {
     display: flex !important;
     position: absolute;
     bottom: 80px;
     width: 100%;
     height: 200px;
   }
-  .nav .nav-mobile {
+  .nav .navMobile {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -509,7 +509,7 @@ footer .bottom .bt p:nth-child(5):hover {
   .nav .ham {
     display: flex;
   }
-  n.av .ham img {
+  n.av .ham .img {
     width: 30px;
     height: 30px;
   }
@@ -520,27 +520,27 @@ footer .bottom .bt p:nth-child(5):hover {
     display: none;
   }
 
-  .mainContainer #bg-left-desktop {
+  .mainContainer #bgLeftDesktop {
     display: none;
   }
-  .mainContainer #bg-right-desktop {
+  .mainContainer #bgRightDesktop {
     display: none;
   }
   .mainContainer .content {
     display: flex;
     flex-direction: column-reverse;
   }
-  .mainContainer .content .main-text {
+  .mainContainer .content .mainText {
     width: 100%;
     background-color: #2d2446;
     margin-top: -10px;
     padding-bottom: 50px;
     text-align: center;
   }
-  .mainContainer .content .main-text .border {
+  .mainContainer .content .mainText .border {
     display: none;
   }
-  .mainContainer .content .main-text h1 {
+  .mainContainer .content .mainText .h1 {
     padding-top: 60px;
     color: white;
     font-size: 45px;
@@ -550,7 +550,7 @@ footer .bottom .bt p:nth-child(5):hover {
     max-width: 320px;
     margin: auto;
   }
-  .mainContainer .content .main-text p {
+  .mainContainer .content .mainText .p {
     font-size: 15px;
     color: white;
     padding-top: 20px;
@@ -559,37 +559,37 @@ footer .bottom .bt p:nth-child(5):hover {
     max-width: 300px;
     margin: auto;
   }
-  .mainContainer .content .main-text .bg-mobile-left,
-  .mainContainer .content .main-text .bg-mobile-right {
+  .mainContainer .content .mainText .bgMobileLeft,
+  .mainContainer .content .mainText .bgMobileRight {
     display: flex;
     position: absolute;
   }
-  .mainContainer .content .main-text .bg-mobile-left {
+  .mainContainer .content .mainText .bgMobileLeft {
     margin-top: -381px;
   }
-  .mainContainer .content .main-text .bg-mobile-right {
+  .mainContainer .content .mainText .bgMobileRight {
     margin-top: -280px;
     right: 0;
   }
-  .mainContainer .content .main-image {
+  .mainContainer .content .mainImage {
     width: 100%;
     height: 50%;
     margin-top: 0px;
   }
-  .mainContainer .content .main-image img {
+  .mainContainer .content .mainImage img {
     max-width: 768px;
     height: 100%;
     margin-top: 0px;
   }
 
-  .container-middle {
+  .containerMiddle {
     margin-top: 105%;
   }
-  .container-middle .content {
+  .containerMiddle .content {
     max-width: 370px;
     text-align: center;
   }
-  .container-middle .content .border-middle {
+  .containerMiddle .content .borderMiddle {
     width: 200px;
     height: 2px;
     background-color: gray;
@@ -597,25 +597,25 @@ footer .bottom .bt p:nth-child(5):hover {
     margin-left: 80px;
     position: absolute;
   }
-  .container-middle .content .h1-different {
+  .containerMiddle .content .h1Different {
     font-size: 50px;
     margin-top: 0px;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
   }
-  .container-middle .content .card-middle {
+  .containerMiddle .content .cardMiddle {
     margin-top: 50px;
     margin-bottom: 150px;
     grid-template-columns: 1fr;
   }
-  .container-middle .content .card-middle .card img {
+  .containerMiddle .content .cardMiddle .card img {
     margin-bottom: 30px;
   }
-  .container-middle .content .card-middle .card h4 {
+  .containerMiddle .content .cardMiddle .card h4 {
     font-size: 27px;
     margin-bottom: 10px;
   }
-  .container-middle .content .card-middle .card p {
+  .containerMiddle .content .cardMiddle .card p {
     font-size: 15px;
     color: gray;
     font-family: "Karla", sans-serif;
@@ -624,24 +624,24 @@ footer .bottom .bt p:nth-child(5):hover {
     width: 95%;
     margin-bottom: 30px;
   }
-  .container-middle .content .find-more {
+  .containerMiddle .content .find-more {
     height: 350px;
     margin-top: -50px;
   }
-  .container-middle .content .find-more #bg-middle-desktop {
+  .containerMiddle .content .find-more #bgMiddle-desktop {
     display: none;
   }
-  .container-middle .content .find-more #bg-middle-mobile {
+  .containerMiddle .content .find-more #bgMiddle-mobile {
     display: flex;
     position: absolute;
     height: 350px;
     margin-left: 174px;
   }
-  .container-middle .content .find-more .content-find-more {
+  .containerMiddle .content .find-more .content-find-more {
     margin-top: 50px;
     display: block;
   }
-  .container-middle .content .find-more .content-find-more h1 {
+  .containerMiddle .content .find-more .content-find-more h1 {
     font-size: 43px;
     color: white;
     font-family: "DM Serif Display", serif;
@@ -811,31 +811,31 @@ footer .bottom .bt p:nth-child(5):hover {
   .mainContainer .content .main-text .bg-mobile-left {
     margin-top: -300px;
   }
-  .mainContainer .content .main-image {
+  .mainContainer .content .mainImage {
     width: 100%;
     height: 100%;
     margin-top: 80px;
   }
-  .mainContainer .content .main-image img {
+  .mainContainer .content .mainImage img {
     max-width: 768px;
     height: 100%;
     margin-top: 0px;
   }
-  .mainContainer .content .main-image .intro-desktop {
+  .mainContainer .content .mainImage .intro-desktop {
     display: none;
   }
-  .mainContainer .content .main-image .intro-mobile {
+  .mainContainer .content .mainImage .intro-mobile {
     display: flex;
   }
 
-  .container-middle {
+  .containerMiddle {
     margin-top: 105%;
   }
-  .container-middle .content {
+  .containerMiddle .content {
     max-width: 250px;
     text-align: center;
   }
-  .container-middle .content .border-middle {
+  .containerMiddle .content .borderMiddle {
     width: 170px;
     height: 2px;
     background-color: gray;
@@ -843,27 +843,27 @@ footer .bottom .bt p:nth-child(5):hover {
     margin-left: 44px;
     position: absolute;
   }
-  .container-middle .content .h1-different {
+  .containerMiddle .content .h1-different {
     font-size: 36px;
     margin-top: 0px;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
   }
-  .container-middle .content .card-middle {
+  .containerMiddle .content .cardMiddle {
     margin-top: 50px;
     margin-bottom: 150px;
     grid-template-columns: 1fr;
   }
-  .container-middle .content .card-middle .card img {
+  .containerMiddle .content .cardMiddle .card img {
     margin-bottom: 30px;
     width: 60px;
     height: 60px;
   }
-  .container-middle .content .card-middle .card h4 {
+  .containerMiddle .content .cardMiddle .card h4 {
     font-size: 20px;
     margin-bottom: 10px;
   }
-  .container-middle .content .card-middle .card p {
+  .containerMiddle .content .cardMiddle .card p {
     font-size: 12px;
     color: gray;
     font-family: "Karla", sans-serif;
@@ -872,24 +872,24 @@ footer .bottom .bt p:nth-child(5):hover {
     width: 95%;
     margin-bottom: 30px;
   }
-  .container-middle .content .find-more {
+  .containerMiddle .content .find-more {
     height: 280px;
     margin-top: -50px;
   }
-  .container-middle .content .find-more #bg-middle-desktop {
+  .containerMiddle .content .find-more #bgMiddle-desktop {
     display: none;
   }
-  .container-middle .content .find-more #bg-middle-mobile {
+  .containerMiddle .content .find-more #bgMiddle-mobile {
     display: flex;
     position: absolute;
     height: 280px;
     margin-left: 94px;
   }
-  .container-middle .content .find-more .content-find-more {
+  .containerMiddle .content .find-more .content-find-more {
     margin-top: 50px;
     display: block;
   }
-  .container-middle .content .find-more .content-find-more h1 {
+  .containerMiddle .content .find-more .content-find-more h1 {
     font-size: 33px;
     color: white;
     font-family: "DM Serif Display", serif;
