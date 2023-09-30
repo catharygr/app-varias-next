@@ -88,8 +88,8 @@ export default function PaginaDestinoSeguro() {
           </div>
         </div>
 
-        {/* <Image src={BgLeftDesktop} alt="#" id={styles.bgLeftDesktop} />
-        <Image src={BgRightDesktop} alt="#" id={styles.bgRightDesktop} /> */}
+        <Image src={BgLeftDesktop} alt="#" id={styles.bgLeftDesktop} />
+        <Image src={BgRightDesktop} alt="#" id={styles.bgRightDesktop} />
       </section>
     </div>
   );
