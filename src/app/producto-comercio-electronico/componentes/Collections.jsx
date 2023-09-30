@@ -52,6 +52,14 @@ export default function Collection() {
   const [imagen, setImagen] = useState(data.images[0].urlGrande);
   const { id, company, name, description, price, discont, images } = data;
 
+  function handleImageGrande() {
+    setImagen(images[0].urlGrande);
+  }
+
+  function handleImagePequena() {
+    setImagen(images[0].urlPequena);
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.producto}>
