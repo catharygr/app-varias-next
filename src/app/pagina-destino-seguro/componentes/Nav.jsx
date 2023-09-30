@@ -1,31 +1,17 @@
-"use client";
 import styles from "./Nav.module.css";
 import Image from "next/image";
 import Logo from "@/app/pagina-destino-seguro/images/logo.svg";
 import MenuHamburger from "@/app/pagina-destino-seguro/images/icon-hamburger.svg";
 import Close from "@/app/pagina-destino-seguro/images/icon-close.svg";
-import { useState } from "react";
+import BgPatternMobile from "@/app/pagina-destino-seguro/images/bg-pattern-mobile-nav.svg";
 
 export default function Nav() {
-  const [isHamburgerActive, setIsHamburgerActive] = useState(false);
-
-  const Hamburger = () => {
-    if (isHamburgerActive === false) {
-      setIsHamburgerActive(true);
-    } else {
-      setIsHamburgerActive(false);
-    }
-  };
-  const navMobile = styles.navMobile;
-
-  const BgPatternMobile = styles.BgPatternMobile;
-
   return (
     <>
       <nav>
         <Image src={Logo} alt="logo" />
 
-        <div className={` pNav ${isHamburgerActive ? navMobile : ""}`}>
+        <div>
           <h3 className={styles.h3}>Sobre Nosotros</h3>
           <h3 className={styles.h3}>Blog</h3>
           <h3 className={styles.h3}>Cuenta</h3>
@@ -34,18 +20,10 @@ export default function Nav() {
           </button>
         </div>
 
-        <div className={styles.ham} onClick={Hamburger}>
+        <div className={styles.ham}>
           <button className={styles.button}>
-            <Image
-              src={MenuHamburger}
-              alt="#"
-              className={isHamburgerActive ? "hidden" : "block"}
-            />
-            <Image
-              src={Close}
-              alt="#"
-              className={isHamburgerActive ? "block" : "hidden"}
-            />
+            <Image src={MenuHamburger} alt="#" />
+            <Image src={Close} alt="#" />
           </button>
         </div>
       </nav>
