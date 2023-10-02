@@ -31,42 +31,70 @@ export default function Nav() {
   );
 }
 
-"use client";
-import { motion } from "framer-motion";
-import styles from "./nav.module.css";
-import Link from "next/link";
+const data = [
+  {
+    slug: "sobre nosotros",
+    text: "Sobre Nosotros",
+    url: "/producto-comercio-electronico/sobre-nosotros",
+  },
+  {
+    slug: "blog",
+    text: "Blog",
+    url: "#",
+  },
+  {
+    slug: "women",
+    text: "Women",
+    url: "/producto-comercio-electronico/women",
+  },
+  {
+    slug: "about",
+    text: "About",
+    url: "/producto-comercio-electronico/about",
+  },
+  {
+    slug: "contact",
+    text: "Contact",
+    url: "/producto-comercio-electronico/contact",
+  },
+];
 
-import { useState, useId } from "react";
+// "use client";
+// import { motion } from "framer-motion";
+// import styles from "./nav.module.css";
+// import Link from "next/link";
 
-export default function Nav() {
-  const [hoveredNavItem, setHoveredNavItem] = useState(null);
-  const id = useId();
+// import { useState, useId } from "react";
 
-  return (
-    <nav className={styles.nav}>
-      <ul className={styles.ul} onMouseLeave={() => setHoveredNavItem(null)}>
-        {data.map(({ slug, text, url }) => (
-          <li key={slug}>
-            {hoveredNavItem === slug && (
-              <motion.div
-                layoutId={id}
-                className={styles.fondo}
-                initial={{
-                  borderRadius: 10,
-                }}
-              />
-            )}
+// export default function Nav() {
+//   const [hoveredNavItem, setHoveredNavItem] = useState(null);
+//   const id = useId();
 
-            <Link
-              className={styles.a}
-              href={url}
-              onMouseEnter={() => setHoveredNavItem(slug)}
-            >
-              {text}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-}
+//   return (
+//     <nav className={styles.nav}>
+//       <ul className={styles.ul} onMouseLeave={() => setHoveredNavItem(null)}>
+//         {data.map(({ slug, text, url }) => (
+//           <li key={slug}>
+//             {hoveredNavItem === slug && (
+//               <motion.div
+//                 layoutId={id}
+//                 className={styles.fondo}
+//                 initial={{
+//                   borderRadius: 10,
+//                 }}
+//               />
+//             )}
+
+//             <Link
+//               className={styles.a}
+//               href={url}
+//               onMouseEnter={() => setHoveredNavItem(slug)}
+//             >
+//               {text}
+//             </Link>
+//           </li>
+//         ))}
+//       </ul>
+//     </nav>
+//   );
+// }
