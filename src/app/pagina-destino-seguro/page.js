@@ -1,10 +1,9 @@
-import styles from "./destino.module.css";
-import Nav from "./componentes/Nav";
+import Header from "./componentes/Header";
 
 export default function PaginaDestinoSeguro() {
   return (
-    <div className={styles.containerPrincipal}>
-      <Nav />
+    <div>
+      <Header />
     </div>
   );
 }

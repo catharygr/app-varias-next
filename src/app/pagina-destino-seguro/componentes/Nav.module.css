@@ -1,0 +1,99 @@
+.icon {
+  margin-left: auto;
+  order: 3;
+}
+
+.nav {
+  order: 1;
+}
+.logo {
+  order: 2;
+}
+
+.ul li {
+  position: relative;
+  list-style: none;
+}
+
+.a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  color: #333;
+}
+
+.fondo {
+  position: absolute;
+  inset: 0;
+  background-color: #999;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.hamburgerBtn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+.hamburgerBtn:hover {
+  transform: scale(1.1);
+}
+
+.navigationList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style-type: none;
+  padding: 0px;
+}
+.navigationList a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+}
+.navigationList a:hover {
+  color: hsl(350deg 100% 40%);
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #999;
+  padding: 1.8rem 0;
+  gap: 3vw;
+  width: 95vw;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6vw;
+}
+
+@media (min-width: 800px) {
+  .ul {
+    flex-direction: row;
+  }
+  .icon {
+    order: 3;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .nav {
+    order: 2;
+  }
+}
