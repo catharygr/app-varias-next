@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import logo from "../image/logo.svg";
+import logo from "@/app/pagina-destino-seguro/image/logo.svg";
 import styles from "./Nav.module.css";
 import Nav from "./Nav";
 import { Menu } from "react-feather";
