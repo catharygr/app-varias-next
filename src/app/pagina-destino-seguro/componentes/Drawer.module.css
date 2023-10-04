@@ -1,6 +1,6 @@
 @keyframes slideIn {
   from {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
 @keyframes fadeIn {
@@ -25,7 +25,7 @@
 .drawer {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
   width: 50%;
   max-width: 300px;
