@@ -12,14 +12,14 @@
 
 .icon {
   margin-left: auto;
-  order: 2;
+  order: 3;
 }
 
 .nav {
   order: 1;
 }
 .logo {
-  order: 3;
+  order: 2;
 }
 
 .ul li {
@@ -82,18 +82,21 @@
 }
 
 @media (min-width: 800px) {
+  .container {
+    flex-direction: row;
+  }
   .ul {
     flex-direction: row;
   }
   .icon {
-    order: 3;
-  }
-
-  .logo {
     order: 1;
   }
 
-  .nav {
+  .logo {
     order: 2;
+  }
+
+  .nav {
+    order: 3;
   }
 }
