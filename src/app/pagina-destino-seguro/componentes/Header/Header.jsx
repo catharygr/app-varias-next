@@ -7,8 +7,7 @@ import { Menu } from "react-feather";
 import { useEffect, useState } from "react";
 import Drawer from "../Drawer";
 import VisuallyHidden from "../VisuallyHidden";
-import useToggle from "../use-toggle";
-import Collections from "./Collections";
+import useToggle from "../../use-toggle";
 
 export default function Header() {
   const [estaMenuAbierto, setEstaMenuAbierto] = useToggle(false);
@@ -67,15 +66,7 @@ export default function Header() {
             alt="Logo de la empresa"
           />
         </div>
-        <Image
-          className={styles.icon}
-          src={icon}
-          alt="Icono de carrito"
-        />
       </header>
-      <div>
-        <Collections />
-      </div>
     </>
   );
 }
