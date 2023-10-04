@@ -1,13 +1,13 @@
 .icon {
   margin-left: auto;
-  order: 3;
+  order: 2;
 }
 
 .nav {
   order: 1;
 }
 .logo {
-  order: 2;
+  order: 3;
 }
 
 .ul li {
@@ -37,7 +37,7 @@
   margin: 0;
   width: 22px;
   height: 22px;
-  display: grid;
+  /* display: grid; */
   place-content: center;
   cursor: pointer;
   transition: transform 200ms;
@@ -64,7 +64,7 @@
 
 .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #999;
   padding: 1.8rem 0;
