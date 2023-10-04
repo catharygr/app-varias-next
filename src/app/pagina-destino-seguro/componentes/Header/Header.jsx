@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import logo from "@/app/pagina-destino-seguro/image/logo.svg";
-import styles from "./Nav.module.css";
-import Nav from "./Nav";
+import styles from "../Nav.module.css";
+import Nav from "../Nav";
 import { Menu } from "react-feather";
 import { useEffect, useState } from "react";
-import Drawer from "./Drawer";
-import VisuallyHidden from "./VisuallyHidden";
-import useToggle from "./use-toggle";
+import Drawer from "../Drawer";
+import VisuallyHidden from "../VisuallyHidden";
+import useToggle from "../use-toggle";
 import Collections from "./Collections";
 
 export default function Header() {
