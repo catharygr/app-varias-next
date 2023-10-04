@@ -37,13 +37,6 @@ export default function Header() {
   return (
     <>
       <header className={styles.container}>
-        <div className={styles.logo}>
-          <Image
-            priority={true}
-            src={logo}
-            alt="Logo de la empresa"
-          />
-        </div>
         {esMovil ? (
           <div>
             <button
@@ -66,39 +59,14 @@ export default function Header() {
         ) : (
           <Nav className={styles.navigationList} />
         )}
+        <div className={styles.logo}>
+          <Image
+            priority={true}
+            src={logo}
+            alt="Logo de la empresa"
+          />
+        </div>
       </header>
-
-      {/* <header className={styles.container}>
-        {esMovil ? (
-          <div>
-            <button
-              onClick={setEstaMenuAbierto}
-              className={styles.hamburgerBtn}
-              aria-expanded={estaMenuAbierto}
-            >
-              <Menu
-                aria-hidden="true"
-                focusable="false"
-              />
-              <VisuallyHidden>Menu</VisuallyHidden>
-            </button>
-            {estaMenuAbierto && (
-              <Drawer handleDismiss={setEstaMenuAbierto}>
-                <Nav className={styles.navigationList} />
-              </Drawer>
-            )}
-          </div>
-        ) : (
-          <Nav className={styles.navigationList} />
-        )}
-        <div className={styles.logo}>
-          <Image
-            priority={true}
-            src={logo}
-            alt="Logo de la empresa"
-          />
-        </div>
-      </header> */}
     </>
   );
 }
