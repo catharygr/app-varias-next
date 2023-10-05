@@ -3,6 +3,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 30vh;
   background-color: hsl(255deg 29% 15%);
+}
+
+.imagenes > img {
+  /* width: 100%; */
+  /* max-width: 100%; */
+}
+
+.h1 {
+  margin-bottom: 1ren;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }

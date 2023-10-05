@@ -1,28 +1,26 @@
 import styles from "./Hero.module.css";
 import Image from "next/image";
-import desktop from "image/image-intro-desktop.jpg";
-import mobile from "image/image-intro-mobile.jpg";
+import desktop from "../image/image-intro-desktop.jpg";
+import mobile from "../image/image-intro-mobile.jpg";
 
 export default function Hero() {
   return (
     <div className={styles.heroContainer}>
-      <div>
+      <div className={styles.imagenes}>
         <picture>
           <source
-            media="(max-width: 49.999rem)"
-            srcset="
-                /images/image-intro-mobile.jpg
-                "
+            media="(max-width: .999rem)"
+            src={mobile}
+            className={styles.mobile}
           />
           <source
-            media="(min-width: 50rem)"
-            srcset="
-                /images/image-intro-desktop.jpg
-                "
+            media="(min-width: 35rem)"
+            src={desktop}
           />
           <Image
-            src=" /images/image-intro-mobile.jpg"
+            src={mobile}
             alt="Imagen de una familia"
+            priority={true}
           />
         </picture>
       </div>
