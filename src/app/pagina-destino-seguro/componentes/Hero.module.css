@@ -11,9 +11,25 @@
   /* max-width: 100%; */
 }
 
-.h1 {
-  margin-bottom: 1ren;
+.contenidoTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: hsl(255deg 29% 15%);
   color: white;
   font-family: "Roboto", sans-serif;
   text-align: center;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  background-color: hsl(255deg 29% 15%);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
 }
