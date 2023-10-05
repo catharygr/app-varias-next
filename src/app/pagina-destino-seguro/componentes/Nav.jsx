@@ -36,6 +36,7 @@ export default function Nav() {
             </Link>
           </li>
         ))}
+        <button className={styles.btn}>Ver planos</button>
       </ul>
     </nav>
   );

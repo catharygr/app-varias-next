@@ -48,9 +48,9 @@ export default function Header() {
                 aria-hidden="true"
                 focusable="false"
               />
+
               <VisuallyHidden>Menu</VisuallyHidden>
             </button>
-            <button>Hola</button>
             {estaMenuAbierto && (
               <Drawer handleDismiss={setEstaMenuAbierto}>
                 <Nav className={styles.navigationList} />
