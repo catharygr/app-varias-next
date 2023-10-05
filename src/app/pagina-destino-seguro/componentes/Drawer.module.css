@@ -50,6 +50,7 @@
   padding: 8px;
   cursor: pointer;
   border: none;
-  background: hsl(350deg 100% 90%);
+  background: hsl(255deg 29% 15%);
   border-radius: 4px;
+  color: white;
 }
