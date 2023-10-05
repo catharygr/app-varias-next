@@ -2,6 +2,7 @@ import styles from "./Hero.module.css";
 import Image from "next/image";
 import desktop from "../image/image-intro-desktop.jpg";
 import mobile from "../image/image-intro-mobile.jpg";
+import bgPatternRight from "../image/bg-pattern-intro-right-mobile.svg";
 
 export default function Hero() {
   return (
@@ -32,6 +33,7 @@ export default function Hero() {
           you. Ensure you and your loved ones are protected.
         </p>
         <button className={styles.btn}>View Plans</button>
+        <Image src={bgPatternRight} />
       </div>
     </div>
   );
