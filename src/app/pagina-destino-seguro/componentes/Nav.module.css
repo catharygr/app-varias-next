@@ -88,9 +88,9 @@
 }
 
 @media (min-width: 40rem) {
-  /* .container {
+  .container {
     flex-direction: row;
-  } */
+  }
   .ul {
     flex-direction: row;
   }
