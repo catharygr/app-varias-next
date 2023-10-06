@@ -12,6 +12,7 @@
 }
 
 .contenidoTexto {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,4 +34,10 @@
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.patternRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
