@@ -7,12 +7,11 @@ import bgPatternRight from "../image/bg-pattern-intro-right-mobile.svg";
 export default function Hero() {
   return (
     <div className={styles.heroContainer}>
-      <div className={styles.imagenes}>
+      <div>
         <picture>
           <source
             media="(max-width: .999rem)"
             src={mobile}
-            className={styles.mobile}
           />
           <source
             media="(min-width: 35rem)"
@@ -22,9 +21,11 @@ export default function Hero() {
             src={mobile}
             alt="Imagen de una familia"
             priority={true}
+            className={styles.img}
           />
         </picture>
       </div>
+
       <div className={styles.contenidoTexto}>
         <h1 className={styles.h1}>Humanizing your insurance.</h1>
         <p>
