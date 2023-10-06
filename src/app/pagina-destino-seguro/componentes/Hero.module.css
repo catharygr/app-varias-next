@@ -6,11 +6,6 @@
   background-color: hsl(255deg 29% 15%);
 }
 
-.heroContainer img {
-  width: 100%;
-  height: auto;
-}
-
 .contenidoTexto {
   position: relative;
   display: flex;
