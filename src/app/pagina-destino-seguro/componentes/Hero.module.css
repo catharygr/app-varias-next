@@ -24,13 +24,14 @@
 }
 
 .btn {
-  padding: 0.5rem;
   border: 1px solid white;
   background-color: hsl(255deg 29% 15%);
   color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   cursor: pointer;
+  margin: 1rem auto;
+  padding: 0.5rem 1.8rem;
 }
 
 .patternRight {
@@ -40,12 +41,6 @@
 }
 
 @media (min-width: 40rem) {
-  /* .heroContainer {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 0 1rem;
-  } */
-
   .heroContainer {
     grid-template-columns: 1fr 5rem 1fr;
     grid-template-rows: auto;
