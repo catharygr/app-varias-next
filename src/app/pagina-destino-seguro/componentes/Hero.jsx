@@ -33,7 +33,7 @@ export default function Hero() {
           you. Ensure you and your loved ones are protected.
         </p>
         <button className={styles.btn}>View Plans</button>
-        <Image src={bgPatternRight} />
+        <Image src={bgPatternRight} className={}/>
       </div>
     </div>
   );
