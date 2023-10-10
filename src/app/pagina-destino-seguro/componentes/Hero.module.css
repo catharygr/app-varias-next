@@ -5,10 +5,6 @@
   background-color: hsl(255deg 29% 15%);
 }
 
-.img {
-  width: 100%;
-}
-
 .contenidoTexto {
   display: grid;
   grid-template-columns: 1fr;
