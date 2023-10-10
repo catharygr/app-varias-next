@@ -23,17 +23,6 @@
   margin: 3rem 0;
 }
 
-.btn {
-  border: 1px solid white;
-  background-color: hsl(255deg 29% 15%);
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  margin: 1rem auto;
-  padding: 0.5rem 1.8rem;
-}
-
 .patternRight {
   position: absolute;
   bottom: 0;
