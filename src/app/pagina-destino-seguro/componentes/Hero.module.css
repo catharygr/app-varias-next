@@ -70,7 +70,7 @@
 
   .picture {
     grid-column: 3 / 4;
-    grid-row: 4/ -1;
+    grid-row: 1/ -1;
     height: 100px;
   }
 
@@ -80,7 +80,6 @@
   }
 
   .btn {
-    align-self: end;
     background-color: white;
     color: hsl(255deg 29% 15%);
   }
