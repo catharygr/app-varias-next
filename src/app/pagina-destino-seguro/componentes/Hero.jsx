@@ -8,7 +8,7 @@ import bgPatternLeft from "../image/bg-pattern-intro-left-mobile.svg";
 export default function Hero() {
   return (
     <div className={styles.heroContainer}>
-      <div>
+      <div className={styles.picture}>
         <picture>
           <source
             media="(max-width: .999rem)"

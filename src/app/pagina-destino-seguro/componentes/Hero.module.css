@@ -41,8 +41,8 @@
 
 .bgPatternLeft {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1;
+  left: 1;
 }
 
 @media (min-width: 40rem) {
@@ -56,19 +56,20 @@
     grid-column: 1 / 3;
     grid-row: 1 / -1;
   }
-  .h1 {
-    font-size: 2.5rem;
+  .picture {
+    grid-column: 2 / 4;
+    grid-row: 1 / -1;
   }
-  /* .h1 {
+  .h1 {
     display: flex;
     flex-direction: row;
     text-align: left;
     margin-top: 3rem;
     gap: 0.5rem;
-  } */
+  }
 
-  /* .btn {
+  .btn {
     justify-self: left;
     margin: 1rem 8rem;
-  } */
+  }
 }
