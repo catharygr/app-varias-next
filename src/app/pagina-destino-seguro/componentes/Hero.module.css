@@ -53,18 +53,28 @@
   }
   .contenidoTexto {
     border-top: 1px solid white;
-
     grid-column: 1 / 3;
     grid-row: 1 / -1;
+    text-align: left;
   }
-  .picture {
+
+  .patternRight {
+    top: 0;
+    right: 0;
   }
+
+  .bgPatternLeft {
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
   .h1 {
     margin-top: 1.9rem;
   }
 
   .btn {
-    justify-self: left;
-    margin: 1rem 8rem;
+    align-self: end;
+    background-color: white;
+    color: hsl(255deg 29% 15%);
   }
 }
