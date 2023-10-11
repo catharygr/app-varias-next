@@ -3,6 +3,7 @@ import Image from "next/image";
 import desktop from "../image/image-intro-desktop.jpg";
 import mobile from "../image/image-intro-mobile.jpg";
 import bgPatternRight from "../image/bg-pattern-intro-right-mobile.svg";
+import bgPatternLeft from "../image/bg-pattern-intro-left-mobile.svg";
 
 export default function Hero() {
   return (
@@ -27,6 +28,10 @@ export default function Hero() {
       </div>
 
       <div className={styles.contenidoTexto}>
+        <Image
+          src={bgPatternLeft}
+          className={styles.bgPatternLeft}
+        />
         <h1 className={styles.h1}>Humanizing your insurance.</h1>
         <p>
           Get your life insurance coverage easier and faster. We blend our
