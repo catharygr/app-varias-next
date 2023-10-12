@@ -1,4 +1,5 @@
 .heroContainer {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2 auto);
@@ -7,6 +8,7 @@
 
 .img {
   width: 100%;
+  height: auto;
 }
 
 .contenidoTexto {
@@ -41,18 +43,19 @@
 
 .bgPatternLeft {
   position: absolute;
-  top: 1;
-  left: 1;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: 40rem) {
   .heroContainer {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:;
+    /* padding: 3rem; */
   }
   .contenidoTexto {
     border-top: 1px solid white;
+    /* width: 30%; */
     grid-column: 1 / 3;
     grid-row: 1 / -1;
     text-align: left;
@@ -64,8 +67,8 @@
   }
 
   .bgPatternLeft {
-    bottom: 0.5rem;
-    left: 0.5rem;
+    bottom: 400px;
+    left: 0;
   }
 
   .picture {

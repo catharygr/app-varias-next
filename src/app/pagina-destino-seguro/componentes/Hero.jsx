@@ -2,8 +2,10 @@ import styles from "./Hero.module.css";
 import Image from "next/image";
 import desktop from "../image/image-intro-desktop.jpg";
 import mobile from "../image/image-intro-mobile.jpg";
-import bgPatternRight from "../image/bg-pattern-intro-right-mobile.svg";
-import bgPatternLeft from "../image/bg-pattern-intro-left-mobile.svg";
+import bgPatternRightMobiles from "../image/bg-pattern-intro-right-mobile.svg";
+import bgPatternLeftMobiles from "../image/bg-pattern-intro-left-mobile.svg";
+import bgPatternLeftDesktop from "../image/bg-pattern-intro-left-desktop.svg";
+import bgPatternRightDesktop from "../image/bg-pattern-intro-right-desktop.svg";
 
 export default function Hero() {
   return (
@@ -29,9 +31,10 @@ export default function Hero() {
 
       <div className={styles.contenidoTexto}>
         <Image
-          src={bgPatternLeft}
-          className={styles.bgPatternLeft}
+          src={bgPatternLeftMobiles}
+          className={styles.bgPatternLeftMobiles}
         />
+        <div></div>
         <h1 className={styles.h1}>Humanizing your insurance.</h1>
         <p>
           Get your life insurance coverage easier and faster. We blend our
@@ -40,7 +43,7 @@ export default function Hero() {
         </p>
         <button className={styles.btn}>View Plans</button>
         <Image
-          src={bgPatternRight}
+          src={bgPatternRightMobiles}
           className={styles.patternRight}
         />
       </div>
