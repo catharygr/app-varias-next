@@ -8,6 +8,7 @@ import bgPatternLeftDesktop from "../image/bg-pattern-intro-left-desktop.svg";
 import bgPatternRightDesktop from "../image/bg-pattern-intro-right-desktop.svg";
 import iconSnappyProcess from "../image/icon-snappy-process.svg";
 import affordablePrices from "../image/icon-affordable-prices.svg";
+import peopleFirst from "../image/icon-people-first.svg";
 
 export default function Hero() {
   return (
@@ -57,10 +58,20 @@ export default function Hero() {
         </div>
         <div>
           <Image src={iconSnappyProcess} />
+          <h3>Snappy Process</h3>
+          <p>
+            Our application process can be completed in minutes, not hours.
+            Don't get stuck filling in tedious forms.
+          </p>
 
           <Image src={affordablePrices} />
+          <h3>Affordable Prices</h3>
+          <p>
+            We don't want you worrying about high monthly costs. Our prices may
+            be low, but we still offer the best coverage possible.
+          </p>
 
-          <Image src={iconSnappyProcess} />
+          <Image src={peopleFirst} />
         </div>
       </div>
     </>
