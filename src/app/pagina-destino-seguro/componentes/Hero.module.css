@@ -50,7 +50,7 @@
 @media (min-width: 40rem) {
   .heroContainer {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:;
+    grid-template-rows: 1f 1f;
     /* padding: 3rem; */
   }
   .contenidoTexto {
