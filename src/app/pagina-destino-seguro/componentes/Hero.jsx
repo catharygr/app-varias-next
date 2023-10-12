@@ -72,6 +72,11 @@ export default function Hero() {
           </p>
 
           <Image src={peopleFirst} />
+          <h3>People First</h3>
+          <p>
+            Our plans aren't full of conditions and clauses to prevent payouts.
+            We make sure you're covered when you need it.
+          </p>
         </div>
       </div>
     </>
