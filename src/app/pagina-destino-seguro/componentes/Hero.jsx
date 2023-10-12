@@ -52,7 +52,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div>
+      <div className={styles.iconos}>
         <div>
           <h2>We are different</h2>
         </div>

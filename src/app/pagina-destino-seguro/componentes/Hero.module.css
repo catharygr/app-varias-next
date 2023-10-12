@@ -47,6 +47,14 @@
   left: 0;
 }
 
+.iconos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 @media (min-width: 40rem) {
   .heroContainer {
     grid-template-columns: 1fr 1fr;
