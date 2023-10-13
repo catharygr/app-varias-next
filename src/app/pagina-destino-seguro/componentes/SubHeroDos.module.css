@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem;
+  background-color: hsl(255deg 29% 15%);
+  width: 350px;
+  height: 350px;
+  color: white;
+}
