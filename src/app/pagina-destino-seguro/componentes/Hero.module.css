@@ -125,6 +125,11 @@
     padding: 2rem;
   }
 
+  .contenidoIconos {
+    display: flex;
+    flex-direction: row;
+  }
+
   .centrarIconos {
     flex-direction: row;
     /* justify-content: space-between;
