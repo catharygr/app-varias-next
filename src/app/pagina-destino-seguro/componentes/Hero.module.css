@@ -47,40 +47,6 @@
   left: 0;
 }
 
-.iconosContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 4rem;
-}
-
-.centrarIconos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-size: 0.9rem;
-  margin: 1rem;
-}
-.iconosContainer h2 {
-  text-align: center;
-  border-top: 1px solid rgb(154, 149, 149);
-  padding-top: 2rem;
-}
-
-.formaIconos {
-  width: 20%;
-}
-
-.p {
-  text-align: center;
-  font-size: 0.9rem;
-  color: rgb(154, 149, 149);
-}
-
 @media (min-width: 40rem) {
   .heroContainer {
     grid-template-columns: 1fr 1fr;
@@ -119,28 +85,5 @@
   .btn {
     background-color: white;
     color: hsl(255deg 29% 15%);
-  }
-  .iconosContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 2rem;
-  }
-
-  .iconosContainer .h2 {
-    text-align: flex-start;
-  }
-
-  .contenidoIconos {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-  .centrarIconos {
-    /* justify-content: flex-start; */
-    align-items: flex-start;
-  }
-  .p {
-    text-align: left;
   }
 }
