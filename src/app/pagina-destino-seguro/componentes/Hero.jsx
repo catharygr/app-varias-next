@@ -53,10 +53,9 @@ export default function Hero() {
         </div>
       </div>
       <div className={styles.iconos}>
-        <div>
-          <h2>We are different</h2>
-        </div>
-        <div>
+        <h2>We are different</h2>
+
+        <div className={styles.contenidoIconos}>
           <Image src={iconSnappyProcess} />
           <h3>Snappy Process</h3>
           <p>
