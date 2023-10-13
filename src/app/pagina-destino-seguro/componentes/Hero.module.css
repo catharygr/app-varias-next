@@ -56,11 +56,6 @@
   margin: 4rem;
 }
 
-.iconos h2 {
-  border-top: 1px solid rgb(154, 149, 149);
-  padding-top: 2rem;
-}
-
 .contenidoIconos {
   display: flex;
   flex-direction: column;
@@ -68,6 +63,10 @@
   align-items: center;
   gap: 1rem;
   font-size: 0.9rem;
+}
+.iconos h2 {
+  border-top: 1px solid rgb(154, 149, 149);
+  padding-top: 2rem;
 }
 
 .formaIconos {
@@ -118,5 +117,11 @@
   .btn {
     background-color: white;
     color: hsl(255deg 29% 15%);
+  }
+  .iconos {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .contenidoIconos {
   }
 }
