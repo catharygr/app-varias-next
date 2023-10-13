@@ -6,9 +6,6 @@ import bgPatternRightMobiles from "../image/bg-pattern-intro-right-mobile.svg";
 import bgPatternLeftMobiles from "../image/bg-pattern-intro-left-mobile.svg";
 import bgPatternLeftDesktop from "../image/bg-pattern-intro-left-desktop.svg";
 import bgPatternRightDesktop from "../image/bg-pattern-intro-right-desktop.svg";
-import iconSnappyProcess from "../image/icon-snappy-process.svg";
-import affordablePrices from "../image/icon-affordable-prices.svg";
-import peopleFirst from "../image/icon-people-first.svg";
 
 export default function Hero() {
   return (
