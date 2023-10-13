@@ -40,8 +40,9 @@
   .container {
     flex-direction: row;
     justify-content: space-between;
-    width: 600px;
+    width: 800px;
     height: 200px;
+    padding: 2rem;
   }
 
   .mobile {
@@ -53,5 +54,13 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+  .h2 {
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  .btn {
+    background-color: white;
+    color: hsl(255deg 29% 15%);
   }
 }
