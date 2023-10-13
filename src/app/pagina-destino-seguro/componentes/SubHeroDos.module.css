@@ -1,12 +1,39 @@
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin: 4rem;
+  margin: 2rem auto;
   background-color: hsl(255deg 29% 15%);
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   color: white;
 }
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.h2 {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  background-color: hsl(255deg 29% 15%);
+  color: white;
+  cursor: pointer;
+}
+
+@
