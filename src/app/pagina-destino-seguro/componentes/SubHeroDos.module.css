@@ -36,4 +36,17 @@
   cursor: pointer;
 }
 
-@
+@media (min-width: 40rem) {
+  .container {
+    width: 600px;
+    height: 600px;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
