@@ -64,10 +64,12 @@
   gap: 1rem;
 }
 
+.formaIconos {
+  width: 20%;
+}
+
 .contenedorIconos p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  text-align: center;
+  text-align: start;
 }
 
 @media (min-width: 40rem) {

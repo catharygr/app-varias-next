@@ -36,6 +36,7 @@ export default function Hero() {
         <div className={styles.contenidoTexto}>
           <Image
             src={bgPatternLeftMobiles}
+            alt="Patrón de fondo"
             className={styles.bgPatternLeftMobiles}
           />
           <div></div>
@@ -48,6 +49,7 @@ export default function Hero() {
           <button className={styles.btn}>View Plans</button>
           <Image
             src={bgPatternRightMobiles}
+            alt="Patrón de fondo"
             className={styles.patternRight}
           />
         </div>
@@ -56,21 +58,33 @@ export default function Hero() {
         <h2>We are different</h2>
 
         <div className={styles.contenidoIconos}>
-          <Image src={iconSnappyProcess} />
+          <Image
+            src={iconSnappyProcess}
+            alt=""
+            className={styles.formaIconos}
+          />
           <h3>Snappy Process</h3>
           <p>
             Our application process can be completed in minutes, not hours.
             Don't get stuck filling in tedious forms.
           </p>
 
-          <Image src={affordablePrices} />
+          <Image
+            src={affordablePrices}
+            alt=""
+            className={styles.formaIconos}
+          />
           <h3>Affordable Prices</h3>
           <p>
             We don't want you worrying about high monthly costs. Our prices may
             be low, but we still offer the best coverage possible.
           </p>
 
-          <Image src={peopleFirst} />
+          <Image
+            src={peopleFirst}
+            alt=""
+            className={styles.formaIconos}
+          />
           <h3>People First</h3>
           <p>
             Our plans aren't full of conditions and clauses to prevent payouts.
