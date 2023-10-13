@@ -52,6 +52,11 @@ export default function Hero() {
             alt="Patrón de fondo"
             className={styles.patternRight}
           />
+          <Image
+            src={bgPatternRightMobiles}
+            alt="Patrón de fondo"
+            className={styles.patternRight}
+          />
         </div>
       </div>
       <div className={styles.iconosContainer}>
@@ -88,6 +93,7 @@ export default function Hero() {
               alt=""
               className={styles.formaIconos}
             />
+
             <h3>People First</h3>
             <p className={styles.p}>
               Our plans aren't full of conditions and clauses to prevent
