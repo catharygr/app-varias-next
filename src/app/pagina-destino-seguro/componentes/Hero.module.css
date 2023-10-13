@@ -122,18 +122,18 @@
   }
   .iconosContainer {
     flex-direction: column;
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 
   .iconosContainer .h2 {
-    text-align: start;
+    text-align: flex-start;
   }
 
   .contenidoIconos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     gap: 1rem;
     margin: 1rem;
   }
