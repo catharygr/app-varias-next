@@ -4,8 +4,8 @@ import desktop from "../image/image-intro-desktop.jpg";
 import mobile from "../image/image-intro-mobile.jpg";
 import bgPatternRightMobiles from "../image/bg-pattern-intro-right-mobile.svg";
 import bgPatternLeftMobiles from "../image/bg-pattern-intro-left-mobile.svg";
-import bgPatternLeftDesktop from "../image/bg-pattern-intro-left-desktop.svg";
-import bgPatternRightDesktop from "../image/bg-pattern-intro-right-desktop.svg";
+// import bgPatternLeftDesktop from "../image/bg-pattern-intro-left-desktop.svg";
+// import bgPatternRightDesktop from "../image/bg-pattern-intro-right-desktop.svg";
 
 export default function Hero() {
   return (
