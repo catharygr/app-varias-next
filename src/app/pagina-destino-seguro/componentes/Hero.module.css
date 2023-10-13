@@ -47,7 +47,7 @@
   left: 0;
 }
 
-.iconos {
+.iconosContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,15 +56,17 @@
   margin: 4rem;
 }
 
-.contenidoIconos {
+.centrarIconos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   font-size: 0.9rem;
+  margin: 1rem;
 }
-.iconos h2 {
+.iconosContainer h2 {
+  text-align: center;
   border-top: 1px solid rgb(154, 149, 149);
   padding-top: 2rem;
 }
@@ -118,10 +120,17 @@
     background-color: white;
     color: hsl(255deg 29% 15%);
   }
-  .iconos {
+  .iconosContainer {
     flex-direction: row;
     padding: 2rem;
   }
-  .contenidoIconos {
+
+  .centrarIconos {
+    flex-direction: row;
+    /* justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin: 1rem; */
   }
 }
