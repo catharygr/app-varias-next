@@ -62,14 +62,17 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  font-size: 0.9rem;
 }
 
 .formaIconos {
   width: 20%;
 }
 
-.contenedorIconos p {
-  text-align: start;
+.p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(154, 149, 149);
 }
 
 @media (min-width: 40rem) {
