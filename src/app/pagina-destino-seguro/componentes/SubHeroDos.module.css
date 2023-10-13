@@ -38,15 +38,21 @@
 
 @media (min-width: 40rem) {
   .container {
-    width: 600px;
-    height: 600px;
-  }
-
-  .desktop {
-    display: block;
+    width: 1000px;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
   }
 
   .mobile {
     display: none;
+  }
+
+  .desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
