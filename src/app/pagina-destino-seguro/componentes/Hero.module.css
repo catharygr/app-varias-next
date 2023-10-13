@@ -121,21 +121,20 @@
     color: hsl(255deg 29% 15%);
   }
   .iconosContainer {
-    flex-direction: row;
+    flex-direction: column;
     padding: 2rem;
+  }
+
+  .iconosContainer .h2 {
+    text-align: start;
   }
 
   .contenidoIconos {
     display: flex;
     flex-direction: row;
-  }
-
-  .centrarIconos {
-    flex-direction: row;
-    /* justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;
+    align-items: start;
     gap: 1rem;
-    font-size: 0.9rem;
-    margin: 1rem; */
+    margin: 1rem;
   }
 }
