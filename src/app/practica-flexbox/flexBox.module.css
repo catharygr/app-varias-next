@@ -1,0 +1,40 @@
+.h2 {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: space-between;
+  gap: 1rem;
+  width: 80vw;
+  /* height: 80vh; */
+  margin: 5vh auto;
+  outline: 1px solid red;
+}
+
+.flexContainer > * {
+  background-color: aqua;
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex-basis: 20vw; */
+  flex: 1 1 150px;
+  /* width: 20vw; */
+  height: 150px;
+}
+.big {
+  /* font-size: 10rem; */
+  /* order: -1; */
+  /* flex-grow: 10;
+  flex-shrink: 0; */
+  align-self: flex-start;
+}
+
+.gridContainer {
+  outline: 50px solid red;
+  border: 50px solid green;
+}
