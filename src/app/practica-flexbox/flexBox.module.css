@@ -25,16 +25,33 @@
   flex: 1 1 150px;
   /* width: 20vw; */
   height: 150px;
+  /* Convierto hijos a padre */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 }
 .big {
   /* font-size: 10rem; */
   /* order: -1; */
   /* flex-grow: 10;
   flex-shrink: 0; */
-  align-self: flex-start;
+  /* align-self: flex-start; */
 }
 
 .gridContainer {
-  outline: 50px solid red;
-  border: 50px solid green;
+  gap: 1rem;
+  width: 80vw;
+  margin: 0 auto;
+  outline: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 5fr 200px;
+  grid-template-rows: 1fr 200px 100px 50px;
+}
+.gridContainer > * {
+  color: white;
+  font-size: 3rem;
+  /* width: 150px; */
+  /* height: 150px; */
+  background-color: blueviolet;
 }
