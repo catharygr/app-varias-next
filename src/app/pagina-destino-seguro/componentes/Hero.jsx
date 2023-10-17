@@ -9,7 +9,7 @@ import bgPatternLeftMobiles from "../image/bg-pattern-intro-left-mobile.svg";
 
 export default function Hero() {
   return (
-    <>
+    <section className={styles.section}>
       <div className={styles.heroContainer}>
         <div className={styles.picture}>
           <picture>
@@ -36,7 +36,7 @@ export default function Hero() {
             alt="Patrón de fondo"
             className={styles.bgPatternLeftMobiles}
           />
-          <div></div>
+          <div className={styles.linea}></div>
           <h1 className={styles.h1}>Humanizing your insurance.</h1>
           <p>
             Get your life insurance coverage easier and faster. We blend our
@@ -56,6 +56,6 @@ export default function Hero() {
           />
         </div>
       </div>
-    </>
+    </section>
   );
 }
