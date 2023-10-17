@@ -52,9 +52,9 @@
     "main main sidebar"
     "main main sidebar"
     "footer footer footer"; */
-  /* justify-items: end;
-  align-items: center; */
-  place-items: center end;
+  /* justify-items: end; */
+  /* align-items: center; */
+  /* place-items: center end; */
   /* grid-auto-columns: 100px; */
   /* grid-auto-flow: row; */
   /* justify-content: space-between; */
@@ -62,9 +62,22 @@
 .gridContainer > * {
   color: white;
   font-size: 3rem;
-  width: 100px;
-  height: 50px;
+  /* width: 100px; */
+  height: 200px;
   background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.siete {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+.ocho {
+  grid-column: 4 / -1;
+  grid-row: 2 / 3;
 }
 
 /* justify-content y align content solamente se usa si la suma de todas las columnas o filas es menor que la anchura del grid container. Eso suele ocurrir si las columnas o filas estan expresadas en px o rem */

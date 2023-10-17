@@ -21,8 +21,8 @@ export default function FlexBox() {
         <div>4</div>
         <div>5</div>
         <div>6</div>
-        <div>7</div>
-        <div>8</div>
+        <div className={styles.siete}>7</div>
+        <div className={styles.ocho}>8</div>
       </div>
     </>
   );
