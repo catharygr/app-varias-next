@@ -15,15 +15,17 @@ export default function FlexBox() {
       </div>
       <h2 className={styles.h2}>Grid</h2>
       <div className={styles.gridContainer}>
-        <div>1</div>
-        <div>2</div>
-        <div className={styles.big}>3</div>
-        <div>4</div>
+        <div className={styles.uno}>1</div>
+        {/* <div>2</div> */}
+        <div className={styles.tres}>3</div>
+        {/* <div>4</div>
         <div>5</div>
-        <div>6</div>
+        <div>6</div> */}
         <div className={styles.siete}>7</div>
         <div className={styles.ocho}>8</div>
       </div>
+      <br />
+      <br />
     </>
   );
 }
