@@ -34,19 +34,6 @@ export default function SubHeroUno() {
             be low, but we still offer the best coverage possible.
           </p>
         </div>
-        <div className={styles.centrarIconos}>
-          <Image
-            src={peopleFirst}
-            alt=""
-            className={styles.formaIconos}
-          />
-
-          <h3>People First</h3>
-          <p className={styles.p}>
-            Our plans aren't full of conditions and clauses to prevent payouts.
-            We make sure you're covered when you need it.
-          </p>
-        </div>
       </div>
     </div>
   );
