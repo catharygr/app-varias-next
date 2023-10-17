@@ -45,13 +45,28 @@
   margin: 0 auto;
   outline: 1px solid red;
   display: grid;
-  grid-template-columns: 1fr 5fr 200px;
-  grid-template-rows: 1fr 200px 100px 50px;
+  grid-template-columns: repeat(6, 1fr);
+  /* grid-template-rows: 100px 100px; */
+  /* grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "main main sidebar"
+    "footer footer footer"; */
+  /* justify-items: end;
+  align-items: center; */
+  place-items: center end;
+  /* grid-auto-columns: 100px; */
+  /* grid-auto-flow: row; */
+  /* justify-content: space-between; */
 }
 .gridContainer > * {
   color: white;
   font-size: 3rem;
-  /* width: 150px; */
-  /* height: 150px; */
+  width: 100px;
+  height: 50px;
   background-color: blueviolet;
 }
+
+/* justify-content y align content solamente se usa si la suma de todas las columnas o filas es menor que la anchura del grid container. Eso suele ocurrir si las columnas o filas estan expresadas en px o rem */
+
+/* place-items es justify y align items juntos */
