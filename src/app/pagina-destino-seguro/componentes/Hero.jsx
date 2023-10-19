@@ -29,32 +29,6 @@ export default function Hero() {
             />
           </picture>
         </div>
-
-        <div className={styles.contenidoTexto}>
-          <Image
-            src={bgPatternLeftMobiles}
-            alt="Patrón de fondo"
-            className={styles.bgPatternLeftMobiles}
-          />
-          <div className={styles.linea}></div>
-          <h1 className={styles.h1}>Humanizing your insurance.</h1>
-          <p>
-            Get your life insurance coverage easier and faster. We blend our
-            expertise and technology to help you find the plan that's right for
-            you. Ensure you and your loved ones are protected.
-          </p>
-          <button className={styles.btn}>View Plans</button>
-          <Image
-            src={bgPatternRightMobiles}
-            alt="Patrón de fondo"
-            className={styles.patternRight}
-          />
-          <Image
-            src={bgPatternRightMobiles}
-            alt="Patrón de fondo"
-            className={styles.patternRight}
-          />
-        </div>
       </div>
     </section>
   );
