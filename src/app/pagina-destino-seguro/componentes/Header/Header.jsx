@@ -13,26 +13,26 @@ export default function Header() {
   const [estaMenuAbierto, setEstaMenuAbierto] = useToggle(false);
   const [esMovil, setEsMovil] = useState(true);
 
-  useEffect(() => {
-    if (window.innerWidth < 800) {
-      setEsMovil(true);
-    } else {
-      setEsMovil(false);
-    }
+  // useEffect(() => {
+  //   if (window.innerWidth < 800) {
+  //     setEsMovil(true);
+  //   } else {
+  //     setEsMovil(false);
+  //   }
 
-    function handleResize() {
-      if (window.innerWidth < 800) {
-        setEsMovil(true);
-      } else {
-        setEsMovil(false);
-      }
-    }
-    const listener = window.addEventListener("resize", handleResize);
+  //   function handleResize() {
+  //     if (window.innerWidth < 800) {
+  //       setEsMovil(true);
+  //     } else {
+  //       setEsMovil(false);
+  //     }
+  //   }
+  //   const listener = window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", listener);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", listener);
+  //   };
+  // }, []);
 
   return (
     <>
