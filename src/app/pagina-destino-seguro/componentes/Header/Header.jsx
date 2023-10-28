@@ -13,5 +13,40 @@ export default function Header() {
   const [estaMenuAbierto, setEstaMenuAbierto] = useToggle(false);
   const [esMovil, setEsMovil] = useState(true);
 
-  return <>></>;
+  return (
+    <>
+      <header className={styles.container}>
+        {esMovil ? (
+          <div>
+            <button
+              onClick={setEstaMenuAbierto}
+              className={styles.hamburgerBtn}
+              aria-expanded={estaMenuAbierto}
+            >
+              <Menu
+                aria-hidden="true"
+                focusable="false"
+              />
+
+              <VisuallyHidden>Menu</VisuallyHidden>
+            </button>
+            {estaMenuAbierto && (
+              <Drawer handleDismiss={setEstaMenuAbierto}>
+                <Nav className={styles.navigationList} />
+              </Drawer>
+            )}
+          </div>
+        ) : (
+          <Nav className={styles.navigationList} />
+        )}
+        <div className={styles.logo}>
+          <Image
+            priority={true}
+            src={logo}
+            alt="Logo de la empresa"
+          />
+        </div>
+      </header>
+    </>
+  );
 }
