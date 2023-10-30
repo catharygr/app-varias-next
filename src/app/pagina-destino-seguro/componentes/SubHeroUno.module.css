@@ -31,28 +31,3 @@
   font-size: 0.9rem;
   color: rgb(154, 149, 149);
 }
-
-@media (min-width: 40rem) {
-  .iconosContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 2rem;
-  }
-
-  .iconosContainer .h2 {
-    text-align: flex-start;
-  }
-
-  .contenidoIconos {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-  }
-  .centrarIconos {
-    align-items: flex-start;
-  }
-  .p {
-    text-align: left;
-  }
-}
