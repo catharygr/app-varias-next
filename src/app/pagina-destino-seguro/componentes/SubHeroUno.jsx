@@ -12,18 +12,6 @@ export default function SubHeroUno() {
       <div className={styles.contenidoIconos}>
         <div className={styles.centrarIconos}>
           <Image
-            src={iconSnappyProcess}
-            alt=""
-            className={styles.formaIconos}
-          />
-          <h3>Snappy Process</h3>
-          <p className={styles.p}>
-            Our application process can be completed in minutes, not hours.
-            Don't get stuck filling in tedious forms.
-          </p>
-        </div>
-        <div className={styles.centrarIconos}>
-          <Image
             src={affordablePrices}
             alt=""
             className={styles.formaIconos}
