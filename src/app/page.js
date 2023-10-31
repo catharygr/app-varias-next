@@ -29,6 +29,12 @@ export default function Home() {
       >
         Práctica Flex Box
       </Link>
+      <Link
+        className={styles.about}
+        href="/age-calculator-app-main"
+      >
+        Calculador de edad
+      </Link>
     </main>
   );
 }
