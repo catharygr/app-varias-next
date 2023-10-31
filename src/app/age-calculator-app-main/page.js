@@ -1,10 +1,11 @@
-import styles from "./page.module.css";
+import styles from "./age.module.css";
 import Image from "next/image";
+import src from "./images/icon-arrow.svg";
 
 export default function Home() {
   return (
-    <section className="container">
-      <form className="form">
+    <section className={styles.container}>
+      <form className={styles.form}>
         <label for="day">
           Dia
           <input
@@ -14,7 +15,7 @@ export default function Home() {
             required
           />
           <p
-            className="messageError"
+            className={styles.messageError}
             id="messageError"
           ></p>
         </label>
@@ -27,7 +28,7 @@ export default function Home() {
             required
           />
           <p
-            className="messageError"
+            className={styles.messageError}
             id="messageError"
           ></p>
         </label>
@@ -40,7 +41,7 @@ export default function Home() {
             required
           />
           <p
-            className="messageError"
+            className={styles.messageError}
             id="messageError"
           ></p>
         </label>
@@ -49,7 +50,7 @@ export default function Home() {
           id="button"
         >
           <Image
-            src="assets/images/icon-arrow.svg"
+            src={src}
             alt="Seta para baixo que ao clicar mostra a idade da pessoa"
             className="icon-arrow"
           />
