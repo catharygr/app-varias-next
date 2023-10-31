@@ -35,12 +35,6 @@ export default function Footer() {
               alt="instagram"
             />
           </Link>
-          <Link href="https://www.instagram.com/">
-            <Image
-              src={instagram}
-              alt="instagram"
-            />
-          </Link>
         </div>
       </div>
     </footer>
