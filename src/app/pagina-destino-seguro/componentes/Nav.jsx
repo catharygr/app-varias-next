@@ -9,37 +9,7 @@ export default function Nav() {
   const [hoveredNavItem, setHoveredNavItem] = useState(null);
   const id = useId();
 
-  return (
-    <nav className={styles.nav}>
-      <ul
-        className={styles.ul}
-        onMouseLeave={() => setHoveredNavItem(null)}
-      >
-        {data.map(({ slug, text, url }) => (
-          <li key={slug}>
-            {hoveredNavItem === slug && (
-              <motion.div
-                layoutId={id}
-                className={styles.fondo}
-                initial={{
-                  borderRadius: 10,
-                }}
-              />
-            )}
-
-            <Link
-              className={styles.a}
-              href={url}
-              onMouseEnter={() => setHoveredNavItem(slug)}
-            >
-              {text}
-            </Link>
-          </li>
-        ))}
-        <button className={styles.btn}>Ver planos</button>
-      </ul>
-    </nav>
-  );
+  return <nav className={styles.nav}></nav>;
 }
 
 const data = [
