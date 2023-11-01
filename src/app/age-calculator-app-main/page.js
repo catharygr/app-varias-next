@@ -9,7 +9,7 @@ export default function Home() {
         <label htmlFor="day">
           Dia
           <input
-            type="number"
+            type="text"
             id="day"
             placeholder="DD"
             required
@@ -22,7 +22,7 @@ export default function Home() {
         <label htmlFor="month">
           Mes
           <input
-            type="number"
+            type="text"
             id="month"
             placeholder="MM"
             required
@@ -35,7 +35,7 @@ export default function Home() {
         <label htmlFor="year">
           Año
           <input
-            type="number"
+            type="text"
             id="year"
             placeholder="YYYY"
             required
