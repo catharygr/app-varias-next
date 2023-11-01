@@ -1,9 +1,9 @@
-/* .container {
+.container {
   background-color: var(--color-white);
   padding: 3rem 1.5rem;
   border-radius: 15px 15px 6rem 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-} */
+}
 
 /* CONTAINER FORMULÁRIO  */
 
@@ -73,22 +73,22 @@
 
 /* CONTAINER DOS DADOS  */
 
-.container-data {
+.containerData {
   margin-top: 4rem;
 }
 
-.container-data p,
-.container-data span {
+.containerData p,
+.containerData span {
   font-size: 3.3rem;
   font-weight: 800;
   font-style: italic;
 }
 
-.container-data p {
+.containerData p {
   color: var(--color-black-off);
 }
 
-.container-data span {
+.containerData span {
   color: var(--color-primary);
 }
 
@@ -125,21 +125,21 @@
     width: 35px;
   }
 
-  .container-data {
+  .containerData {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
-  .container-data p {
+  .containerData p {
     display: flex;
     align-items: center;
     gap: 1rem;
     max-height: 40px;
   }
 
-  .container-data p,
-  .container-data span {
+  .containerData p,
+  .containerData span {
     font-size: 5rem;
   }
 }

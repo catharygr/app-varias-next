@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className={styles.container}>
       <form className={styles.form}>
-        <label for="day">
+        <label htmlFor="day">
           Dia
           <input
             type="number"
@@ -19,7 +19,7 @@ export default function Home() {
             id="messageError"
           ></p>
         </label>
-        <label for="month">
+        <label htmlFor="month">
           Mês
           <input
             type="number"
@@ -32,7 +32,7 @@ export default function Home() {
             id="messageError"
           ></p>
         </label>
-        <label for="year">
+        <label htmlFor="year">
           Ano
           <input
             type="number"
@@ -56,28 +56,28 @@ export default function Home() {
           />
         </button>
       </form>
-      <div className="container-data">
-        <p className="text">
+      <div className={styles}>
+        <p className={styles.text}>
           <span
-            className="data"
+            className={styles.data}
             id="years"
           >
             - -
           </span>
           anos
         </p>
-        <p className="text">
+        <p className={styles.text}>
           <span
-            className="data"
+            className={styles.data}
             id="months"
           >
             - -
           </span>
           meses
         </p>
-        <p className="text">
+        <p className={styles.text}>
           <span
-            className="data"
+            className={styles.data}
             id="days"
           >
             - -
