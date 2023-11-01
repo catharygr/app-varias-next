@@ -20,7 +20,7 @@ export default function Home() {
           ></p>
         </label>
         <label htmlFor="month">
-          Mês
+          Mes
           <input
             type="number"
             id="month"
@@ -33,7 +33,7 @@ export default function Home() {
           ></p>
         </label>
         <label htmlFor="year">
-          Ano
+          Año
           <input
             type="number"
             id="year"
