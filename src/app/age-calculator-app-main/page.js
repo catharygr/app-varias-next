@@ -64,7 +64,7 @@ export default function Home() {
           >
             - -
           </span>
-          anos
+          años
         </p>
         <p className={styles.text}>
           <span
