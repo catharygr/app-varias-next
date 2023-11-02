@@ -57,7 +57,7 @@ export default function Home() {
           />
         </button>
       </form>
-      <div className={styles}>
+      <div className={styles.containerData}>
         <p className={styles.text}>
           <span
             className={styles.data}
