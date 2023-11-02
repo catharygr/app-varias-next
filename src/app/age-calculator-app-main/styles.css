@@ -1,0 +1,48 @@
+:root {
+  --color-primary: hsl(259, 100%, 65%);
+  --color-secundary: hsl(0, 100%, 67%);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-off: hsl(0, 0%, 94%);
+  --color-light-grey: hsl(0, 0%, 86%);
+  --color-smokey-grey: hsl(0, 1%, 44%);
+  --color-black-off: hsl(0, 0%, 8%);
+
+  --font-main: "Poppins", sans-serif;
+}
+
+@keyframes animationArrow {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  max-width: 100%;
+}
+
+body {
+  padding: 4rem 2rem 0 2rem;
+  background-color: var(--color-white-off);
+  font-family: var(--font-main);
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 4rem 0;
+  }
+}

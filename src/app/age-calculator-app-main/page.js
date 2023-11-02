@@ -1,6 +1,7 @@
 import styles from "./age.module.css";
 import Image from "next/image";
 import src from "./images/icon-arrow.svg";
+import "./styles.css";
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
         >
           <Image
             src={src}
-            alt="Seta para baixo que ao clicar mostra a idade da pessoa"
+            alt="Flecha hacia abajo que, al hacer clic, muestra la edad de la persona"
             className={styles.iconArrow}
           />
         </button>
