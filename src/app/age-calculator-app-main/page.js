@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import styles from "./age.module.css";
 import Image from "next/image";
 import src from "./images/icon-arrow.svg";
@@ -13,6 +13,7 @@ export default function Home() {
   const [months, setMonths] = useState("--");
   const [days, setDays] = useState("--");
   const [error, setError] = useState("");
+  const dayRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -63,7 +64,16 @@ export default function Home() {
     setDays(ageInDays);
 
     setError("");
+    // Restablecer los valores de los campos de entrada
+    setDay("");
+    setMonth("");
+    setYear("");
   };
+
+  useEffect(() => {
+    // Establecer el enfoque en el campo de día al cargar la página
+    dayRef.current.focus();
+  }, []);
 
   return (
     <section className={styles.container}>
@@ -80,6 +90,7 @@ export default function Home() {
             required
             value={day}
             onChange={(e) => setDay(e.target.value)}
+            ref={dayRef}
           />
           <p
             className={styles.messageError}
