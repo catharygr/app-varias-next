@@ -12,7 +12,7 @@
   position: relative;
   display: flex;
   gap: 1rem;
-  border-bottom: 1px solid var(--color-light-grey);
+  border-bottom: 1px solid grey;
   padding-bottom: 4rem;
 }
 
@@ -36,11 +36,11 @@
 
 .form input:focus {
   outline: none;
-  border: 0.16rem solid var(--color-);
+  border: 0.16rem solid red;
 }
 
 .form .messageError {
-  color: var(--color-secundary);
+  color: orangered;
   margin-top: 0.5rem;
   font-size: 0.7rem;
   font-weight: 400;
