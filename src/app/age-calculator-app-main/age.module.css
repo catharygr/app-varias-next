@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--color-white);
+  background-color: white;
   padding: 3rem 1.5rem;
   border-radius: 15px 15px 6rem 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -17,7 +17,7 @@
 }
 
 .form label {
-  color: var(--color-smokey-grey);
+  color: gray;
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -30,13 +30,13 @@
   font-size: 1.5rem;
   font-weight: 700;
   border-radius: 8px;
-  border: 0.13rem solid var(--color-light-grey);
-  color: var(--color-black-off);
+  border: 0.13rem solid grey;
+  color: black;
 }
 
 .form input:focus {
   outline: none;
-  border: 0.16rem solid var(--color-primary);
+  border: 0.16rem solid var(--color-);
 }
 
 .form .messageError {

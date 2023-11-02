@@ -52,7 +52,7 @@ export default function Home() {
           <Image
             src={src}
             alt="Seta para baixo que ao clicar mostra a idade da pessoa"
-            className="icon-arrow"
+            className={styles.iconArrow}
           />
         </button>
       </form>
