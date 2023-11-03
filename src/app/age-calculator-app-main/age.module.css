@@ -17,7 +17,7 @@
 }
 
 .form label {
-  color: gray;
+  color: var(--color-smokey-grey);
   font-size: 0.9rem;
   font-weight: 700;
   text-transform: uppercase;
