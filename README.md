@@ -1,10 +1,10 @@
-# App varias desarrolladas con Next
+# App varias desarrolladas con Next y React
 
 # Carrusel de Testimonios
 
 Este es un componente de carrusel de testimonios desarrollado con Next.js. Permite mostrar testimonios de diferentes personas junto con sus imágenes y profesiones. Los usuarios pueden navegar entre los testimonios haciendo clic en las flechas de navegación.
 
-## aracterísticas Principales
+## Características Principales
 
 Muestra testimonios de diferentes personas.
 Permite navegar entre los testimonios utilizando flechas de navegación.
