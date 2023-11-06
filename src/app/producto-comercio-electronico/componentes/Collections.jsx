@@ -137,8 +137,6 @@ export default function Collection() {
               className="cart-count"
               width="12"
               height="4"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
             >
               <h5 className="cart_count">0</h5>
             </div>
