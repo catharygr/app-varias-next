@@ -1,9 +1,12 @@
+import Image from "next/image";
+import logo from "../image/logo.svg";
+
 export default function Header() {
   return (
     <header className="bg-white p-6 relative">
       <nav className="max-w-5xl mx-auto flex items-center justify-between">
         <div className="">
-          <img
+          <Image
             src={logo}
             alt="logo"
             className="cursor-pointer"

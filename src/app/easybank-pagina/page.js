@@ -1,4 +1,4 @@
-import Header from "../pagina-destino-seguro/componentes/Header/Header";
+import Header from "./componentes/Header";
 import Articulos from "./componentes/Articulos";
 
 export default function EasybankPagina() {
