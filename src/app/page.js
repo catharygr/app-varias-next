@@ -34,6 +34,12 @@ export default function Home() {
       >
         Calculador de edad
       </Link>
+      <Link
+        className={styles.about}
+        href="/easybank-pagina"
+      >
+        EasyBank página principal
+      </Link>
     </main>
   );
 }
