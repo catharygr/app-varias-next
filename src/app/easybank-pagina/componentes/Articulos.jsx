@@ -1,3 +1,8 @@
+import Image from "next/image";
+import currency from "../image/image-currency.jpg";
+import restaurant from "../image/image-restaurant.jpg";
+import plane from "../image/image-plane.jpg";
+
 export default function Articulos() {
   return (
     <>
@@ -7,7 +12,7 @@ export default function Articulos() {
         </h2>
         <div className="grid md:grid-cols-4 grid-cols-1 gap-3">
           <div className="max-w-xs mx-auto mb-6">
-            <img
+            <Image
               src={currency}
               alt=""
               className="rounded-t-xl"
@@ -25,7 +30,7 @@ export default function Articulos() {
             </div>
           </div>
           <div className="max-w-xs mx-auto mb-6">
-            <img
+            <Image
               src={restaurant}
               alt=""
               className="rounded-t-xl"
@@ -43,7 +48,7 @@ export default function Articulos() {
             </div>
           </div>
           <div className="max-w-xs mx-auto mb-6">
-            <img
+            <Image
               src={plane}
               alt=""
               className="rounded-t-xl"
