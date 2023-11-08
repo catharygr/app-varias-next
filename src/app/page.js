@@ -12,7 +12,7 @@ export default function Home() {
       </Link>
       <Link
         className={styles.about}
-        href="/carrusel-testominios"
+        href="/carrusel-testimonios"
       >
         Carrusel de testimonios
       </Link>

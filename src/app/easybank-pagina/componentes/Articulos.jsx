@@ -2,6 +2,7 @@ import Image from "next/image";
 import currency from "../image/image-currency.jpg";
 import restaurant from "../image/image-restaurant.jpg";
 import plane from "../image/image-plane.jpg";
+import confetti from "../image/image-confetti.jpg";
 
 export default function Articulos() {
   return (
@@ -66,7 +67,7 @@ export default function Articulos() {
             </div>
           </div>
           <div className="max-w-xs mx-auto mb-6">
-            <img
+            <Image
               src={confetti}
               alt=""
               className="rounded-t-xl"
