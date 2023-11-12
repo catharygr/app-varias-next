@@ -5,7 +5,13 @@ export default function Header() {
   return (
     <header className="bg-white p-6 relative">
       <nav className="max-w-5xl mx-auto flex items-center justify-between">
-        <div className=""></div>
+        <div className="">
+          <Image
+            src={logo}
+            alt="logo"
+            className="cursor-pointer"
+          />
+        </div>
         <button
           className="sm:hidden block"
           id="openBtn"
