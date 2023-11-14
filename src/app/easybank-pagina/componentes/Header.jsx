@@ -1,7 +1,25 @@
+"use client";
 import Image from "next/image";
 import logo from "../image/logo.svg";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  function toggleMenu() {
+    const openBtn = document.getElementById("openBtn");
+    const closeBtn = document.getElementById("closeBtn");
+    const menu = document.getElementById("menu");
+    if (menu.classList.contains("hidden")) {
+      menu.classList.remove("hidden");
+      menu.classList.add("block");
+      openBtn.classList.add("hidden");
+      closeBtn.classList.remove("hidden");
+    } else {
+      menu.classList.remove("block");
+      menu.classList.add("hidden");
+      openBtn.classList.remove("hidden");
+      closeBtn.classList.add("hidden");
+    }
+  }
   return (
     <header className="bg-white p-6 relative">
       <nav className="max-w-5xl mx-auto flex items-center justify-between">
