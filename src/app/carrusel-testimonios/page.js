@@ -2,11 +2,11 @@
 import styles from "./carrusel.module.css";
 import React, { useState } from "react";
 import Image from "next/image";
-import bg from "@/app/carrusel-testominios/images/pattern-bg.svg";
-import tanya from "@/app/carrusel-testominios/images/image-tanya.jpg";
-import quotes from "@/app/carrusel-testominios/images/pattern-quotes.svg";
-import curve from "@/app/carrusel-testominios/images/pattern-curve.svg";
-import john from "@/app/carrusel-testominios/images/image-john.jpg";
+import bg from "@/app/carrusel-testimonios/images/pattern-bg.svg";
+import tanya from "@/app/carrusel-testimonios/images/image-tanya.jpg";
+import quotes from "@/app/carrusel-testimonios/images/pattern-quotes.svg";
+import curve from "@/app/carrusel-testimonios/images/pattern-curve.svg";
+import john from "@/app/carrusel-testimonios/images/image-john.jpg";
 import { ChevronLeft, ChevronRight } from "react-feather";
 
 export default function Carrusel() {
@@ -50,9 +50,16 @@ export default function Carrusel() {
   };
 
   return (
-    <div style={miestilo} className={styles.container}>
+    <div
+      style={miestilo}
+      className={styles.container}
+    >
       <div className={styles.carruselDer}>
-        <Image className={styles.bg} src={bg} alt="bg" />
+        <Image
+          className={styles.bg}
+          src={bg}
+          alt="bg"
+        />
         <Image
           className={styles.persona}
           src={persona.imagen}
@@ -69,7 +76,11 @@ export default function Carrusel() {
         </button>
       </div>
       <div className={styles.carruselIzq}>
-        <Image className={styles.quotes} src={quotes} alt="quotes" />
+        <Image
+          className={styles.quotes}
+          src={quotes}
+          alt="quotes"
+        />
 
         <p className={styles.p}>{persona.testimonio}</p>
         <div className={styles.parrafo}>
