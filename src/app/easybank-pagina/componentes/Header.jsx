@@ -1,21 +1,22 @@
 "use client";
 import Image from "next/image";
 import logo from "../image/logo.svg";
+import React from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   function toggleMenu() {
     const openBtn = document.getElementById("openBtn");
     const closeBtn = document.getElementById("closeBtn");
-    const menu = document.getElementById("menu");
-    if (menu.classList.contains("hidden")) {
-      menu.classList.remove("hidden");
-      menu.classList.add("block");
+    const isMenuOpen = document.getElementById("isMenuOpen");
+    if (isMenuOpen.classList.contains("hidden")) {
+      isMenuOpen.classList.remove("hidden");
+      isMenuOpen.classList.add("block");
       openBtn.classList.add("hidden");
       closeBtn.classList.remove("hidden");
     } else {
-      menu.classList.remove("block");
-      menu.classList.add("hidden");
+      isMenuOpen.classList.remove("block");
+      isMenuOpen.classList.add("hidden");
       openBtn.classList.remove("hidden");
       closeBtn.classList.add("hidden");
     }
@@ -42,7 +43,7 @@ export default function Header() {
             />
           ) : (
             <img
-              src={menu}
+              src={isMenuOpen}
               alt="Menu"
             />
           )}
