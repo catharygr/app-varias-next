@@ -92,3 +92,55 @@
 .containerData span {
   color: var(--color-primary);
 }
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 800px;
+    padding: 3rem 2.5rem;
+  }
+
+  .form {
+    gap: 2rem;
+  }
+
+  .form label {
+    width: 25%;
+  }
+
+  .form input {
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.8rem;
+  }
+
+  .form button {
+    padding: 20px;
+    top: 7.5rem;
+    left: 90%;
+  }
+
+  .form button:hover img {
+    animation: animationArrow 980ms ease-in-out infinite;
+  }
+
+  .form button img {
+    width: 35px;
+  }
+
+  .containerData {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .containerData p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-height: 40px;
+  }
+
+  .containerData p,
+  .containerData span {
+    font-size: 5rem;
+  }
+}
