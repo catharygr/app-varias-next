@@ -16,6 +16,7 @@ function Header() {
           src={Logo}
           alt="logo"
           className={styles.logo}
+          priority={true}
         />
         <ul className={styles.list_desktop}>
           <li>
@@ -37,6 +38,7 @@ function Header() {
         <button className={styles.button_desktop}>Request Invite</button>
         <Image
           src={openMenu ? ButtonCloseMenuMobile : ButtonMenuMobile}
+          alt="buttonMenuMobile"
           className={
             openMenu ? styles.buttonMenuMobileClose : styles.buttonMenuMobile
           }
