@@ -1,7 +1,7 @@
 function NavegacionMobiles() {
   return (
-    <nav className={style.container}>
-      <ul className={style.list}>
+    <nav className={styles.container}>
+      <ul className={styles.list}>
         <a href="#">
           <li>Home</li>
         </a>

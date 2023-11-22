@@ -1,8 +1,8 @@
 "use client";
-import styles from "../easybank.module.css";
+import styles from "./Header.module.css";
 import Image from "next/image";
 import Logo from "../images/logo.svg";
-import ButtonMenuMobile from "../images/bg-intro-mobile.svg";
+import ButtonMenuMobile from "../images/buttonMenuMobile.svg";
 import ButtonCloseMenuMobile from "../images/icon-close.svg";
 import NavegacionMobiles from "./NavegacionMobiles";
 import React, { useState } from "react";
@@ -35,7 +35,7 @@ function Header() {
           </li>
         </ul>
         <button className={styles.button_desktop}>Request Invite</button>
-        <img
+        <Image
           src={openMenu ? ButtonCloseMenuMobile : ButtonMenuMobile}
           className={
             openMenu ? styles.buttonMenuMobileClose : styles.buttonMenuMobile
