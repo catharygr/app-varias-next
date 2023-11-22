@@ -9,6 +9,7 @@ function SeccionUna() {
         <Image
           src={mockups}
           className={styles.mockup}
+          alt="mockups"
         />
       </div>
 
