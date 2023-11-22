@@ -2,7 +2,7 @@
 import styles from "../easybank.module.css";
 import Image from "next/image";
 import Logo from "../images/logo.svg";
-// import ButtonMenuMobile from "../images/buttonMenuMobile.svg";
+import ButtonMenuMobile from "../images/bg-intro-mobile.svg";
 import ButtonCloseMenuMobile from "../images/icon-close.svg";
 import NavegacionMobiles from "./NavegacionMobiles";
 import useState from "react";
@@ -38,7 +38,7 @@ function Header() {
         <img
           src={openMenu ? ButtonCloseMenuMobile : ButtonMenuMobile}
           className={
-            openMenu ? styles.buttonMenuMobileClose : style.buttonMenuMobile
+            openMenu ? styles.buttonMenuMobileClose : styles.buttonMenuMobile
           }
           onClick={() => setOpenMenu(!openMenu)}
         />
