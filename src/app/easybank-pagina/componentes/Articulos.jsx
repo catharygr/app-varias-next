@@ -1,8 +1,8 @@
 import Image from "next/image";
-import currency from "../image/image-currency.jpg";
-import restaurant from "../image/image-restaurant.jpg";
-import plane from "../image/image-plane.jpg";
-import confetti from "../image/image-confetti.jpg";
+import currency from "../images/image-currency.jpg";
+import restaurant from "../images/image-restaurant.jpg";
+import plane from "../images/image-plane.jpg";
+import confetti from "../images/image-confetti.jpg";
 
 export default function Articulos() {
   return (

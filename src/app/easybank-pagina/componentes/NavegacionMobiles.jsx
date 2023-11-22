@@ -22,4 +22,4 @@ function NavegacionMobiles() {
   );
 }
 
-export default NavigationMobile;
+export default NavegacionMobiles;

@@ -1,8 +1,9 @@
-import style from "./easybank.module.css";
+"use client";
+import styles from "../easybank.module.css";
 import Image from "next/image";
-import Logo from "./images/logo.svg";
-import ButtonMenuMobile from "../assets/images/buttonMenuMobile.svg";
-import ButtonCloseMenuMobile from "../assets/images/icon-close.svg";
+import Logo from "../images/logo.svg";
+// import ButtonMenuMobile from "../images/buttonMenuMobile.svg";
+import ButtonCloseMenuMobile from "../images/icon-close.svg";
 import NavegacionMobiles from "./NavegacionMobiles";
 import useState from "react";
 
@@ -10,13 +11,13 @@ function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <>
-      <header className={style.container}>
+      <header className={styles.container}>
         <Image
           src={Logo}
           alt="logo"
-          className={style.logo}
+          className={styles.logo}
         />
-        <ul className={style.list_desktop}>
+        <ul className={styles.list_desktop}>
           <li>
             <a href="#">Home</a>
           </li>
@@ -33,11 +34,11 @@ function Header() {
             <a href="#">Careers</a>
           </li>
         </ul>
-        <button className={style.button_desktop}>Request Invite</button>
+        <button className={styles.button_desktop}>Request Invite</button>
         <img
           src={openMenu ? ButtonCloseMenuMobile : ButtonMenuMobile}
           className={
-            openMenu ? style.buttonMenuMobileClose : style.buttonMenuMobile
+            openMenu ? styles.buttonMenuMobileClose : style.buttonMenuMobile
           }
           onClick={() => setOpenMenu(!openMenu)}
         />
