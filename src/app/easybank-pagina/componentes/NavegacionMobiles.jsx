@@ -1,3 +1,5 @@
+import styles from "./NavegacionMobiles.module.css";
+
 function NavegacionMobiles() {
   return (
     <nav className={styles.container}>
