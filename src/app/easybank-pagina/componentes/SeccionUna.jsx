@@ -1,11 +1,12 @@
 import styles from "./SeccionUna.module.css";
+import Image from "next/image";
 import mockups from "../images/image-mockups.png";
 
 function SeccionUna() {
   return (
     <div className={styles.container}>
       <div className={styles.container_1}>
-        <img
+        <Image
           src={mockups}
           className={styles.mockup}
         />
