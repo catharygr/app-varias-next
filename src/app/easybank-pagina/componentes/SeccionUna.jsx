@@ -5,13 +5,7 @@ import mockups from "../images/image-mockups.png";
 function SeccionUna() {
   return (
     <div className={styles.container}>
-      <div className={styles.container_1}>
-        <Image
-          src={mockups}
-          className={styles.mockup}
-          alt="mockups"
-        />
-      </div>
+      <div className={styles.container_1}></div>
 
       <div className={styles.container_2}>
         <h1 className={styles.title}>Next generation digital banking</h1>
