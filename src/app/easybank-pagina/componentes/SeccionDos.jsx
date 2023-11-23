@@ -1,10 +1,11 @@
 import styles from "./SeccionDos.module.css";
+import Image from "next/image";
 import online from "../images/icon-online.svg";
 import budgeting from "../images/icon-budgeting.svg";
 import onboarding from "../images/icon-onboarding.svg";
 import api from "../images/icon-api.svg";
 
-function SectionTwo() {
+function SeccionDos() {
   return (
     <div className={styles.container}>
       <h1 className={styles.titles}>Why choose Easybank?</h1>
@@ -16,7 +17,7 @@ function SectionTwo() {
 
       <div className={styles.container_1}>
         <div className={styles.card}>
-          <img
+          <Image
             src={online}
             className={styles.imgs}
           />
@@ -29,7 +30,7 @@ function SectionTwo() {
         </div>
 
         <div className={styles.card}>
-          <img
+          <Image
             src={budgeting}
             className={styles.imgs}
           />
@@ -43,7 +44,7 @@ function SectionTwo() {
         </div>
 
         <div className={styles.card}>
-          <img
+          <Image
             src={onboarding}
             className={styles.imgs}
           />
@@ -56,7 +57,7 @@ function SectionTwo() {
         </div>
 
         <div className={styles.card}>
-          <img
+          <Image
             src={api}
             className={styles.imgs}
           />
@@ -73,4 +74,4 @@ function SectionTwo() {
   );
 }
 
-export default SectionTwo;
+export default SeccionDos;
