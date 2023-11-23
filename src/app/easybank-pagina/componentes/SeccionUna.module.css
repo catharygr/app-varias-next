@@ -68,3 +68,42 @@
   background-position: center;
   background-size: 100%;
 }
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row-reverse;
+    max-height: 600px;
+    margin-top: 50px;
+    padding-bottom: 0px;
+  }
+
+  .container_1 {
+    background-size: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-size: cover;
+    width: 70%;
+    background-position: center;
+  }
+
+  .mockup {
+    width: 80%;
+  }
+  .container_2 {
+    align-items: flex-start;
+    width: 40%;
+  }
+
+  .title {
+    text-align: left;
+    padding-left: 70px;
+  }
+  .paragraph {
+    text-align: left;
+    padding-left: 70px;
+  }
+  .button {
+    margin-left: 70px;
+  }
+}
