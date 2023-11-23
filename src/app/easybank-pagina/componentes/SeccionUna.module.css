@@ -1,10 +1,10 @@
 .container {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 0.3rem;
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  padding-bottom: 90px;
+  padding-bottom: 5rem;
   max-width: 1440px;
 }
 
@@ -24,8 +24,8 @@
   text-align: center;
   font-weight: 300;
   color: var(--darkBlue);
-  font-size: 48px;
-  padding: 5px 20px;
+  font-size: 3rem;
+  padding: 0.3rem 1.2rem;
 }
 
 .paragraph {
@@ -40,7 +40,7 @@
   width: 40%;
   text-align: center;
   border-radius: 50px;
-  padding: 15px;
+  padding: 1rem;
   border-color: transparent;
   color: var(--lightGrayishBlue);
   background-image: linear-gradient(
@@ -48,8 +48,8 @@
     var(--limeGreen),
     var(--brightCyan)
   );
-  font-size: 14px;
-  margin: 10px;
+  font-size: 0.9rem;
+  margin: 0.6rem;
   cursor: pointer;
   border: none;
 }
@@ -73,8 +73,8 @@
   .container {
     flex-direction: row-reverse;
     max-height: 600px;
-    margin-top: 50px;
-    padding-bottom: 0px;
+    margin-top: 3rem;
+    padding-bottom: 0;
   }
 
   .container_1 {
@@ -97,13 +97,13 @@
 
   .title {
     text-align: left;
-    padding-left: 70px;
+    padding-left: 4.3rem;
   }
   .paragraph {
     text-align: left;
-    padding-left: 70px;
+    padding-left: 4.3rem;
   }
   .button {
-    margin-left: 70px;
+    margin-left: 4.3rem;
   }
 }
