@@ -36,14 +36,6 @@ function Header() {
           </li>
         </ul>
         <button className={styles.button_desktop}>Request Invite</button>
-        <Image
-          src={openMenu ? ButtonCloseMenuMobile : ButtonMenuMobile}
-          alt="buttonMenuMobile"
-          className={
-            openMenu ? styles.buttonMenuMobileClose : styles.buttonMenuMobile
-          }
-          onClick={() => setOpenMenu(!openMenu)}
-        />
       </header>
       {openMenu && <NavegacionMobiles />}
     </>
