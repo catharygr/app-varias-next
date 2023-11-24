@@ -19,7 +19,8 @@ react-feather para las flechas de navegación
 
 # Calculadora de Edad en React
 
-Este código representa una aplicación web simple desarrollada con React para calcular la edad en años, meses y días a partir de la fecha de nacimiento ingresada. Aquí hay una descripción de las principales características y estructura del código:
+## Tecnologías utilizadas
+Next.js, React, CSS (utilizando módulos CSS)
 
  ## Entrada de Fecha:
 Tres campos de entrada para día, mes y año.
