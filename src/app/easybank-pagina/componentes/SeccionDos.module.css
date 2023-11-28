@@ -53,33 +53,3 @@
   justify-content: center;
   flex-direction: column;
 }
-
-@media (min-width: 48rem) {
-  .container {
-    padding-top: 3rem;
-    padding-left: 4.3rem;
-    padding-right: 4.3rem;
-    min-height: 600px;
-  }
-
-  .container_1 {
-    flex-direction: row;
-  }
-
-  .card {
-    align-items: flex-start;
-    padding: 0.6rem;
-  }
-
-  .paragraph {
-    text-align: left;
-    width: 100%;
-    padding: 0.6rem;
-  }
-
-  .titles {
-    width: 100%;
-    text-align: left;
-    padding: 0.6rem;
-  }
-}
