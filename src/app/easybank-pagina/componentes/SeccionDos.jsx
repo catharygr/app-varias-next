@@ -57,11 +57,6 @@ function SeccionDos() {
         </div>
 
         <div className={styles.card}>
-          <Image
-            src={api}
-            className={styles.imgs}
-          />
-
           <h2 className={styles.subtitle}>Open API</h2>
 
           <p className={styles.paragraph}>
