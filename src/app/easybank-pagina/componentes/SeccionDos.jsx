@@ -1,4 +1,9 @@
 import styles from "./SeccionDos.module.css";
+import Image from "next/image";
+import online from "../images/icon-online.svg";
+import budgeting from "../images/icon-budgeting.svg";
+import onboarding from "../images/icon-onboarding.svg";
+import api from "../images/icon-api.svg";
 
 function SeccionDos() {
   return (
