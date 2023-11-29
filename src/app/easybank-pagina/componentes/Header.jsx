@@ -1,5 +1,11 @@
 "use client";
 import styles from "./Header.module.css";
+import Image from "next/image";
+import Logo from "../images/logo.svg";
+import ButtonMenuMobile from "../images/buttonMenuMobile.svg";
+import ButtonCloseMenuMobile from "../images/icon-close.svg";
+import NavegacionMobiles from "./NavegacionMobiles";
+import React, { useState } from "react";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);

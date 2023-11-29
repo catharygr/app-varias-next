@@ -16,19 +16,6 @@
   display: none;
 }
 
-.buttonMenuMobile {
-  margin-right: 15px;
-  width: 32px;
-}
-.buttonMenuMobileClose {
-  margin-right: 15px;
-  width: 24px;
-}
-
-.logo {
-  margin-left: 5px;
-}
-
 .button_desktop {
   display: none;
 }
