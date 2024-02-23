@@ -8,7 +8,7 @@ import { Menu } from "react-feather";
 import { useEffect, useState } from "react";
 import Drawer from "./Drawer";
 import VisuallyHidden from "./VisuallyHidden";
-import useToggle from "../../easybank-pagina/componentes/use-toggle";
+import useToggle from "./use-toggle";
 import Collections from "./Collections";
 
 export default function Header() {
