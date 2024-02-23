@@ -8,7 +8,7 @@ import { Menu } from "react-feather";
 import { useEffect, useState } from "react";
 import Drawer from "./Drawer";
 import VisuallyHidden from "./VisuallyHidden";
-import useToggle from "./use-toggle";
+import useToggle from "../../easybank-pagina/componentes/use-toggle";
 import Collections from "./Collections";
 
 export default function Header() {
@@ -46,7 +46,10 @@ export default function Header() {
               className={styles.hamburgerBtn}
               aria-expanded={estaMenuAbierto}
             >
-              <Menu aria-hidden="true" focusable="false" />
+              <Menu
+                aria-hidden="true"
+                focusable="false"
+              />
               <VisuallyHidden>Menu</VisuallyHidden>
             </button>
             {estaMenuAbierto && (
@@ -59,9 +62,17 @@ export default function Header() {
           <Nav className={styles.navigationList} />
         )}
         <div className={styles.logo}>
-          <Image priority={true} src={logo} alt="Logo de la empresa" />
+          <Image
+            priority={true}
+            src={logo}
+            alt="Logo de la empresa"
+          />
         </div>
-        <Image className={styles.icon} src={icon} alt="Icono de carrito" />
+        <Image
+          className={styles.icon}
+          src={icon}
+          alt="Icono de carrito"
+        />
       </header>
       <div>
         <Collections />
