@@ -14,7 +14,7 @@ React
 CSS (utilizando módulos CSS)
 react-feather para las flechas de navegación
 
-# Calculadora de Edad en React
+## Calculadora de Edad en React
 
 ## Tecnologías utilizadas
 Next.js, React, CSS (utilizando módulos CSS)
