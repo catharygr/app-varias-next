@@ -11,16 +11,16 @@
   "dependencies": {
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
-    "framer-motion": "^10.16.4",
-    "next": "^14.0.3",
+    "framer-motion": "^10.18.0",
+    "next": "^14.2.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-feather": "^2.0.10",
-    "react-focus-lock": "^2.9.5",
-    "react-remove-scroll": "^2.5.6"
+    "react-focus-lock": "^2.13.2",
+    "react-remove-scroll": "^2.6.0"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^9.0.0",
-    "prettier": "^3.0.3"
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3"
   }
 }
